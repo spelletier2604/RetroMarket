@@ -47,7 +47,7 @@ public void ConfigureServices(IServiceCollection services) {
             app.UseMvc(routes => {
                 routes.MapRoute(
                         name: "Default",
-                        template: "Home",
+                        template:"Home",
                         defaults: new {controller = "Home", action = "Index"}
                     );
 

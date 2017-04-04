@@ -13,15 +13,9 @@
         <a href="Home">
             <img src="~/lib/Images/Logo.png" alt="Logo" height="50" width="90">
         </a>
-        <a style="color:aliceblue; margin-left:15px" href="Home">
-            Accueil
-        </a>
-        <a style="color:aliceblue; margin-left:15px" href="About">
-            À propos
-        </a>
-        <a style="color:aliceblue; margin-left:15px" href="Contact">
-            Contact
-        </a>
+        <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="Home" asp-action="About">About</a>
+        <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
         <div class="pull-right">
             @await Component.InvokeAsync("CartSummary")
         </div>
