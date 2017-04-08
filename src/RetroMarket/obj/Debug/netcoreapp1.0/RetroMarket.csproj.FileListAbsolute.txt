@@ -34,3 +34,10 @@ C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netc
 C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.AssemblyInfo.cs
 C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.dll
 C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.pdb
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\en\RetroMarket.resources.dll
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\fr\RetroMarket.resources.dll
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._Layout.en.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._Layout.fr.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.csproj.GenerateResource.Cache
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\en\RetroMarket.resources.dll
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\fr\RetroMarket.resources.dll
