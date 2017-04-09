@@ -1,5 +1,10 @@
-﻿<h2 style="text-align:center">Contactez-nous!</h2>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<h2 style="text-align:center">@Localizer["Contact"]</h2>
 
 <p style="text-align:center">
-    INSERT LINKS HERE... LOL
+    @Localizer["Contact2"]
+
+    Renaud, met le lien facebook ici pleb.
 </p>

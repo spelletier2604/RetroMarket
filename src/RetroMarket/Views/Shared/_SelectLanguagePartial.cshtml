@@ -14,8 +14,8 @@
     .ToList(); 
 }
 
-<div title="@SharedLocalizer["Langue"] @requestCulture?.Provider?.GetType().Name">
+<div title="@SharedLocalizer["Language"] @requestCulture?.Provider?.GetType().Name">
     <form id="selectLanguage" asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@Context.Request.Path" method="post" class="form-horizontal" role="form">
-        @SharedLocalizer["Langue"] <select name="culture" asp-for="@requestCulture.RequestCulture.UICulture.Name" asp-items="cultureItems" onchange="this.form.submit()"></select>
+        @SharedLocalizer["Language"] <select name="culture" asp-for="@requestCulture.RequestCulture.UICulture.Name" asp-items="cultureItems" onchange="this.form.submit()"></select>
     </form>
 </div>

@@ -1,42 +1,45 @@
-﻿@model Order
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
-<h2>Check out now</h2>
-<p>Please enter your details, and we'll ship your goods right away!</p>
+@model Order
+
+<h2>@Localizer["Check"]</h2>
+<p>@Localizer["Please"]</p>
 <div asp-validation-summary="All" class="text-danger"></div>
 <form asp-action="Checkout" method="post">
-    <h3>Ship to</h3>
+    <h3>@Localizer["Ship"]</h3>
     <div class="form-group">
-        <label>Name:</label><input asp-for="Name" class="form-control" />
+        <label>@Localizer["Name"]</label><input asp-for="Name" class="form-control" />
     </div>
-    <h3>Address</h3>
+    <h3>@Localizer["Address"]</h3>
     <div class="form-group">
-        <label>Line 1:</label><input asp-for="Line1" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Line 2:</label><input asp-for="Line2" class="form-control" />
+        <label>@Localizer["Line1"]</label><input asp-for="Line1" class="form-control" />
     </div>
     <div class="form-group">
-        <label>Line 3:</label><input asp-for="Line3" class="form-control" />
+        <label>@Localizer["Line2"]</label><input asp-for="Line2" class="form-control" />
     </div>
     <div class="form-group">
-        <label>City:</label><input asp-for="City" class="form-control" />
+        <label>@Localizer["Line3"]</label><input asp-for="Line3" class="form-control" />
     </div>
     <div class="form-group">
-        <label>State:</label><input asp-for="State" class="form-control" />
+        <label>@Localizer["City"]</label><input asp-for="City" class="form-control" />
     </div>
     <div class="form-group">
-        <label>Zip:</label><input asp-for="Zip" class="form-control" />
+        <label>@Localizer["State"]</label><input asp-for="State" class="form-control" />
     </div>
     <div class="form-group">
-        <label>Country:</label><input asp-for="Country" class="form-control" />
+        <label>@Localizer["Zip"]</label><input asp-for="Zip" class="form-control" />
     </div>
-    <h3>Options</h3>
+    <div class="form-group">
+        <label>@Localizer["Country"]</label><input asp-for="Country" class="form-control" />
+    </div>
+    <h3>@Localizer["Options"]</h3>
     <div class="checkbox">
         <label>
-            <input asp-for="GiftWrap" /> Gift wrap these items
+            <input asp-for="GiftWrap" /> @Localizer["Gift"]
         </label>
     </div>
     <div class="text-center">
-        <input class="btn btn-primary" type="submit" value="Complete Order" />
+        <input class="btn btn-primary" type="submit" value="@Localizer["Complete"]" />
     </div>
 </form>

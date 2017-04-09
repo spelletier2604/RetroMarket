@@ -1,4 +1,7 @@
-﻿@model IEnumerable<Order>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@model IEnumerable<Order>
 @{
     ViewBag.Title = "Orders";
     Layout = "_AdminLayout";
@@ -6,19 +9,19 @@
 @if (Model.Count() > 0)
 {
     <table class="table table-bordered table-striped">
-        <tr><th>Name</th><th>Zip</th><th colspan="2">Details</th><th></th></tr>
+        <tr><th>@Localizer["Name"]</th><th>@Localizer["Zip"]</th><th colspan="2">@Localizer["Details"]</th><th></th></tr>
         @foreach (Order o in Model)
         {
             <tr>
                 <td>@o.Name</td>
                 <td>@o.Zip</td>
-                <th>Product</th>
-                <th>Quantity</th>
+                <th>@Localizer["Product"]</th>
+                <th>@Localizer["Quantity"]</th>
                 <td>
                     <form asp-action="MarkShipped" method="post">
                         <input type="hidden" name="orderId" value="@o.OrderID" />
                         <button type="submit" class="btn btn-sm btn-danger">
-                            Ship
+                            @Localizer["Ship"]
                         </button>
                     </form>
                 </td>
@@ -37,5 +40,5 @@
 }
 else
 {
-    <div class="text-center">No Unshipped Orders</div>
+    <div class="text-center">@Localizer["Unshipped"]</div>
 }

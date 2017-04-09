@@ -1,6 +1,8 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
-<h2 style="text-align:center">Bienvenue!</h2>
+<h2 style="text-align:center">@Localizer["Welcome"]</h2>
 
-<p style="text-align:center">Bienvenue sur le site web de Retro Market!
-   Ici, vous trouverez de vieilles consoles, manettes et accessoires usages et neuf!
-   Bon magasinage!</p>
+<p style="text-align:center">@Localizer["Website"]
+    @Localizer["Here"]
+    @Localizer["Shopping"]</p>
