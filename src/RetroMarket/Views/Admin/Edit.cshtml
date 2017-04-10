@@ -1,4 +1,7 @@
-﻿@model Product
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@model Product
 @{
     ViewBag.Title = "Edit Product";
     Layout = "_AdminLayout";
@@ -26,7 +29,7 @@
         <input asp-for="Price" class="form-control" />
     </div>
     <div class="text-center">
-        <button class="btn btn-primary" type="submit">Save</button>
-        <a asp-action="Index" class="btn btn-default">Cancel</a>
+        <button class="btn btn-primary" type="submit">@Localizer["Save"]</button>
+        <a asp-action="Index" class="btn btn-default">@Localizer["Cancel"]</a>
     </div>
 </form>

@@ -1,3 +1,6 @@
-﻿<h2>Thanks!</h2>
-<p>Thanks for placing your order.</p>
-<p>We'll ship your goods as soon as possible.</p>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<h2>@Localizer["Thanks"]</h2>
+<p>@Localizer["Thanks2"]</p>
+<p>@Localizer["Ship"]</p>

@@ -1,13 +1,16 @@
-﻿@model CartIndexViewModel
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
-<h2>Your cart</h2>
+@model CartIndexViewModel
+
+<h2>@Localizer["Cart"]</h2>
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
-            <th>Quantity</th>
-            <th>Item</th>
-            <th class="text-right">Price</th>
-            <th class="text-right">Subtotal</th>
+            <th>@Localizer["Quantity"]</th>
+            <th>@Localizer["Item"]</th>
+            <th class="text-right">@Localizer["Price"]</th>
+            <th class="text-right">@Localizer["Subtotal"]</th>
         </tr>
     </thead>
     <tbody>
@@ -26,7 +29,7 @@
                         <input type="hidden" name="returnUrl" 
                             value="@Model.ReturnUrl" />
                         <button type="submit" class="btn btn-sm btn-danger ">
-                            Remove
+                            @Localizer["Remove"]
                         </button>
                     </form>
                 </td>
@@ -44,8 +47,8 @@
 </table>
 
 <div class="text-center">
-    <a class="btn btn-primary" href="@Model.ReturnUrl">Continue shopping</a>
+    <a class="btn btn-primary" href="@Model.ReturnUrl">@Localizer["Continue"]</a>
     <a class="btn btn-primary" asp-action="Checkout" asp-controller="Order">
-        Checkout
+        @Localizer["Checkout"]
     </a>
 </div>

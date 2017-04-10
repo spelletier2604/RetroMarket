@@ -1,5 +1,8 @@
 ﻿@model Product
 
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
 <div class="well">
     <h3>
         <strong>@Model.Name</strong>
@@ -15,7 +18,7 @@
         <span class="lead">
             @Model.Description
             <button type="submit" class="btn btn-success btn-sm pull-right">
-                Add To Cart
+                @Localizer["Add"]
             </button>
         </span>
     </form>
