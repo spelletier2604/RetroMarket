@@ -107,7 +107,7 @@ namespace RetroMarket
                 //routes.MapRoute(
                 //    name: null,
                 //    template: "Page{page:int}",
-                //    defaults: new { controller = "Product", action = "List"}
+                //    defaults: new { controller = "Product", action = "List", page = 1 }
                 //);
 
                 routes.MapRoute(
