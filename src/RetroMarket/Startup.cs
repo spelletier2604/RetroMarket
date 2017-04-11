@@ -10,7 +10,11 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
+<<<<<<< HEAD
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+=======
 using Sakura.AspNetCore.Mvc;
+>>>>>>> origin/master
 
 namespace RetroMarket
 {
@@ -31,6 +35,13 @@ namespace RetroMarket
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration["Data:SportStoreProducts:ConnectionString"]));
+
+            services.AddDbContext<AppIdentityDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration["Data:RetroMarketIdentity:ConnectionString"]));
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>();
+
             services.AddTransient<IProductRepository, EFProductRepository>();
             services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -78,10 +89,11 @@ namespace RetroMarket
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();
+            app.UseIdentity();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                        name: "Default",
+                        name: "default",
                         template: "Home",
                         defaults: new { controller = "Home", action = "Index" }
                     );
@@ -124,6 +136,7 @@ namespace RetroMarket
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
             SeedData.EnsurePopulated(app);
+            IdentitySeedData.EnsurePopulated(app);
         }
 
     }

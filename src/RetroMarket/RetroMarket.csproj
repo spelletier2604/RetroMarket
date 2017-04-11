@@ -25,6 +25,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
@@ -51,6 +52,7 @@
 
   <ItemGroup>
     <None Include="Resources\Views\Home\About.en.resx" />
+    <None Include="Resources\Views\Shared\Components\CartSummary\Default.fr.resx" />
     <None Include="wwwroot\lib\Images\Logo_-_Pink.PNG" />
   </ItemGroup>
 
