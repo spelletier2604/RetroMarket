@@ -7,6 +7,8 @@ namespace RetroMarket.Models {
         public int ProductID { get; set; }
         [Required(ErrorMessage = "Please enter a product name")]
         public string Name { get; set; }
+
+        public bool Etat { get; set; } // Neuf ou usagé
         [Required(ErrorMessage = "Please enter a description")]
         public string Description { get; set; }
         [Required]
@@ -14,5 +16,7 @@ namespace RetroMarket.Models {
         public decimal Price { get; set; }
         [Required(ErrorMessage = "Please specify a category")]
         public string Category { get; set; }
+
+        public TypeProduit Type { get; set; }
     }
 }

@@ -46,6 +46,14 @@
         "runtime": {
           "RetroMarket.dll": {}
         },
+        "resources": {
+          "en/RetroMarket.resources.dll": {
+            "locale": "en"
+          },
+          "fr/RetroMarket.resources.dll": {
+            "locale": "fr"
+          }
+        },
         "compile": {
           "RetroMarket.dll": {}
         }
