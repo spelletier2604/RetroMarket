@@ -1,0 +1,14 @@
+﻿@model IPagedList<Product>
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<div class="Products">
+    <pager setting-link-attr-data-ajax="true"
+           setting-link-attr-data-ajax-method="GET"
+           setting-link-attr-data-ajax-mode="replace-with"
+           setting-link-attr-data-ajax-update=".Products" />
+    @foreach (var p in Model)
+    {
+        @Html.Partial("ProductSummary", p)
+    }
+</div>
