@@ -1,11 +1,35 @@
-﻿@model ProductsListViewModel
-
-@foreach (var p in Model.Products) {
-    @Html.Partial("ProductSummary", p)
+﻿@model IPagedList<Product>
+@{
+    SelectList liste_ordretri = new SelectList(new string[] { "Nom", "Prix" }, "Nom");
+    SelectList liste_recherche = new SelectList(new string[] { "Nom", "Description" }, "Nom");
 }
-
-<div page-model="@Model.PagingInfo" page-action="List" page-classes-enabled="true"
-     page-class="btn" page-class-normal="btn-default"
-     page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
-     class="btn-group pull-right">
+<div class="row">
+    <form class="form-inline" asp-action="List"
+          data-ajax="true"
+          data-ajax-method="GET"
+          data-ajax-mode="replace"
+          data-ajax-update=".Products">
+        <div class="col-md-6">
+            Tri:
+            <select name="ordretri" asp-items="@liste_ordretri" class="form-control"></select>
+            <input type="submit" name="Trier" class="btn btn-primary" />
+        </div>
+        <div class="col-md-6 text-right">
+            Recherche:
+            <input type="text" name="motrecherche" class="form-control" />
+            <select name="champrec" asp-items="@liste_recherche" class="form-control"></select>
+            <input type="submit" value="Rechercher" class="btn btn-primary" />
+        </div>
+    </form>
 </div>
+@Html.Partial("_ListListeProduitsPartial", Model)
+
+
+@section scripts {
+    <environment names="Development">
+        <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+    </environment>
+}

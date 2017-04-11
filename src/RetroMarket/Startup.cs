@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
+using Sakura.AspNetCore.Mvc;
 
 namespace RetroMarket
 {
@@ -53,6 +54,11 @@ namespace RetroMarket
                 });
             services.AddMemoryCache();
             services.AddSession();
+            services.AddBootstrapPagerGenerator(options =>
+            {
+                // Use default pager options.
+                options.ConfigureDefault();
+            });
         }
 
         public void Configure(IApplicationBuilder app,
@@ -92,28 +98,28 @@ namespace RetroMarket
                         defaults: new { controller = "Home", action = "About" }
                     );
 
-                routes.MapRoute(
-                    name: null,
-                    template: "{category}/Page{page:int}",
-                    defaults: new { controller = "Product", action = "List" }
-                );
-
-                routes.MapRoute(
-                    name: null,
-                    template: "Page{page:int}",
-                    defaults: new { controller = "Product", action = "List", page = 1 }
-                );
+                //routes.MapRoute(
+                //    name: null,
+                //    template: "{category}/Page{page:int}",
+                //    defaults: new { controller = "Product", action = "List" }
+                //);
+                //
+                //routes.MapRoute(
+                //    name: null,
+                //    template: "Page{page:int}",
+                //    defaults: new { controller = "Product", action = "List"}
+                //);
 
                 routes.MapRoute(
                     name: null,
                     template: "{category}",
-                    defaults: new { controller = "Product", action = "List", page = 1 }
+                    defaults: new { controller = "Product", action = "List"}
                 );
 
                 routes.MapRoute(
                     name: null,
                     template: "",
-                    defaults: new { controller = "Product", action = "List", page = 1 });
+                    defaults: new { controller = "Product", action = "List"});
 
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
