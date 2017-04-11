@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace RetroMarket.Migrations.AppIdentityDb
+namespace RetroMarket.Migrations
 {
-    public partial class Initial : Migration
+    public partial class TestUsers : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

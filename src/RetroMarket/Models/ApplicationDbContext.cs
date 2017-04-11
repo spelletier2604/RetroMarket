@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace RetroMarket.Models {
 
-    public class ApplicationDbContext : DbContext {
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+    {
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
@@ -17,5 +19,7 @@ namespace RetroMarket.Models {
 
         /*public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }*/
+
+        
     }
 }

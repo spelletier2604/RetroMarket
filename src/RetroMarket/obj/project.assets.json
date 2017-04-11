@@ -4245,7 +4245,7 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication/1.1.1": {
-      "sha512": "5M2o8+xlgn/mu/qmovBoqiSq3VBc0FikkM6HN4wpohI2RCgg2pP22PV4haCc4ypd3XrMWWPQzm5o2arFt8aBJg==",
+      "sha512": "YTDjSF+YdUvNTha9dipv3WhXcCCvoJmFFctR8pLKTX/TOCGe4YmiBPNxcOV+KGRf/EJhZmC+PU9j6evA11z7XA==",
       "type": "package",
       "path": "microsoft.aspnetcore.authentication/1.1.1",
       "files": [
@@ -4258,7 +4258,7 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication.Cookies/1.1.1": {
-      "sha512": "8MiijS70X0v4Ja3XSIsheGb6sbPovFr+/2hNGhTmbk/sqDLbsFx6EIUiJjRDOFpSbUsZDCv+tvgzw2DRMZVmww==",
+      "sha512": "3lDlw+ojtnuEY+b+zDfBhhKNMBdHyWnVjTTsMgxDH8V1VEIrgrg593FoSCF5IFkTanVV3FByZJZaUDwzXo9x6w==",
       "type": "package",
       "path": "microsoft.aspnetcore.authentication.cookies/1.1.1",
       "files": [
@@ -4310,7 +4310,7 @@
       ]
     },
     "Microsoft.AspNetCore.Cryptography.KeyDerivation/1.1.1": {
-      "sha512": "ek51fKmGWKE19dwHdvLcC5PrlNC5Kg62DLIziS7YWUrIH2sVQNP1/5FhW62NCpgsqelhqkJarzddEQ4PW1vmRw==",
+      "sha512": "wOwnofeMlkjjbi2jF/JSMMTolAbFKYlmZNp3Wq5sOINSTNILu7riSaRhuDcKZKSlhUa2MkhxTyz1x5ADjMHKDQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/1.1.1",
       "files": [
@@ -4490,7 +4490,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity/1.1.1": {
-      "sha512": "IwpzI/gBvYNtd9rCU9FNpC280IdId6cCzdNYeZ3caWypdUu/kG4zJMvO1snySyMRib3MDs907yXlEcGGfu1gQw==",
+      "sha512": "V2FeEpyCiz7H1G0rcbFJznfjouxg8mxIhqn4u/wyXlAYteYm+bVzJkA8zaiKzGqjfJc2buQ2j0EZdokl1oS2tQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity/1.1.1",
       "files": [
@@ -4503,7 +4503,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/1.1.1": {
-      "sha512": "oHdDnjYpv/Lp5KTmsri4LFAjcht7dWFsSV8F62Dr9Q9yt98rKdzoLWbzeO4xECqqPGnX1FjOOvksvw7xSpaUlA==",
+      "sha512": "3jjScZ/GXo2uer9vscU+bRo0USIQPtedq05QMSp3xKcXFeJQ/WM+ejHkymjUxZne4gJfchR38HBbJYNk0Su4Ww==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/1.1.1",
       "files": [
@@ -4546,12 +4546,12 @@
       "type": "package",
       "path": "microsoft.aspnetcore.mvc/1.1.2",
       "files": [
-        "Microsoft.AspNetCore.Mvc.1.1.2.nupkg.sha512",
-        "Microsoft.AspNetCore.Mvc.nuspec",
         "lib/net451/Microsoft.AspNetCore.Mvc.dll",
         "lib/net451/Microsoft.AspNetCore.Mvc.xml",
         "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.dll",
-        "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.xml"
+        "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.xml",
+        "microsoft.aspnetcore.mvc.1.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.Abstractions/1.1.2": {
@@ -4806,12 +4806,12 @@
       "type": "package",
       "path": "microsoft.aspnetcore.staticfiles/1.1.1",
       "files": [
-        "Microsoft.AspNetCore.StaticFiles.1.1.1.nupkg.sha512",
-        "Microsoft.AspNetCore.StaticFiles.nuspec",
         "lib/net451/Microsoft.AspNetCore.StaticFiles.dll",
         "lib/net451/Microsoft.AspNetCore.StaticFiles.xml",
         "lib/netstandard1.3/Microsoft.AspNetCore.StaticFiles.dll",
-        "lib/netstandard1.3/Microsoft.AspNetCore.StaticFiles.xml"
+        "lib/netstandard1.3/Microsoft.AspNetCore.StaticFiles.xml",
+        "microsoft.aspnetcore.staticfiles.1.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.staticfiles.nuspec"
       ]
     },
     "Microsoft.AspNetCore.WebUtilities/1.1.1": {
@@ -5018,12 +5018,12 @@
       "type": "package",
       "path": "microsoft.entityframeworkcore/1.1.1",
       "files": [
+        "Microsoft.EntityFrameworkCore.1.1.1.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.xml",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.dll",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.1.1.1.nupkg.sha512",
-        "microsoft.entityframeworkcore.nuspec"
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.xml"
       ]
     },
     "Microsoft.EntityFrameworkCore.Design/1.1.1": {
@@ -5031,12 +5031,12 @@
       "type": "package",
       "path": "microsoft.entityframeworkcore.design/1.1.1",
       "files": [
+        "Microsoft.EntityFrameworkCore.Design.1.1.1.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Design.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Design.xml",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.1.1.1.nupkg.sha512",
-        "microsoft.entityframeworkcore.design.nuspec"
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.xml"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/1.1.1": {
@@ -5044,12 +5044,12 @@
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational/1.1.1",
       "files": [
+        "Microsoft.EntityFrameworkCore.Relational.1.1.1.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Relational.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.xml",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.dll",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.1.1.1.nupkg.sha512",
-        "microsoft.entityframeworkcore.relational.nuspec"
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.xml"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational.Design/1.1.1": {
@@ -5057,12 +5057,12 @@
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational.design/1.1.1",
       "files": [
+        "Microsoft.EntityFrameworkCore.Relational.Design.1.1.1.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Relational.Design.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.xml",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml",
-        "microsoft.entityframeworkcore.relational.design.1.1.1.nupkg.sha512",
-        "microsoft.entityframeworkcore.relational.design.nuspec"
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml"
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/1.1.1": {
@@ -5216,12 +5216,12 @@
       "type": "package",
       "path": "microsoft.extensions.configuration.json/1.1.1",
       "files": [
-        "Microsoft.Extensions.Configuration.Json.1.1.1.nupkg.sha512",
-        "Microsoft.Extensions.Configuration.Json.nuspec",
         "lib/net451/Microsoft.Extensions.Configuration.Json.dll",
         "lib/net451/Microsoft.Extensions.Configuration.Json.xml",
         "lib/netstandard1.3/Microsoft.Extensions.Configuration.Json.dll",
-        "lib/netstandard1.3/Microsoft.Extensions.Configuration.Json.xml"
+        "lib/netstandard1.3/Microsoft.Extensions.Configuration.Json.xml",
+        "microsoft.extensions.configuration.json.1.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.json.nuspec"
       ]
     },
     "Microsoft.Extensions.DependencyInjection/1.1.0": {
@@ -5381,12 +5381,12 @@
       "type": "package",
       "path": "microsoft.extensions.logging.debug/1.1.1",
       "files": [
-        "Microsoft.Extensions.Logging.Debug.1.1.1.nupkg.sha512",
-        "Microsoft.Extensions.Logging.Debug.nuspec",
         "lib/net451/Microsoft.Extensions.Logging.Debug.dll",
         "lib/net451/Microsoft.Extensions.Logging.Debug.xml",
         "lib/netstandard1.3/Microsoft.Extensions.Logging.Debug.dll",
-        "lib/netstandard1.3/Microsoft.Extensions.Logging.Debug.xml"
+        "lib/netstandard1.3/Microsoft.Extensions.Logging.Debug.xml",
+        "microsoft.extensions.logging.debug.1.1.1.nupkg.sha512",
+        "microsoft.extensions.logging.debug.nuspec"
       ]
     },
     "Microsoft.Extensions.ObjectPool/1.1.0": {
@@ -5628,12 +5628,12 @@
       "type": "package",
       "path": "microsoft.visualstudio.web.browserlink/1.1.0",
       "files": [
-        "Microsoft.VisualStudio.Web.BrowserLink.1.1.0.nupkg.sha512",
-        "Microsoft.VisualStudio.Web.BrowserLink.nuspec",
         "lib/net451/Microsoft.VisualStudio.Web.BrowserLink.dll",
         "lib/net451/Microsoft.VisualStudio.Web.BrowserLink.xml",
         "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.dll",
-        "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.xml"
+        "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.xml",
+        "microsoft.visualstudio.web.browserlink.1.1.0.nupkg.sha512",
+        "microsoft.visualstudio.web.browserlink.nuspec"
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/1.0.0": {
@@ -10903,15 +10903,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Renaud\\.nuget\\packages\\": {}
+    "C:\\Users\\Samuel Pelletier\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Cegep\\Hivers 2017\\web\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
+      "projectUniqueName": "C:\\Users\\Samuel Pelletier\\Desktop\\GitCommerce\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
       "projectName": "RetroMarket",
-      "projectPath": "C:\\Cegep\\Hivers 2017\\web\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
-      "outputPath": "C:\\Cegep\\Hivers 2017\\web\\RetroMarket\\src\\RetroMarket\\obj\\",
+      "projectPath": "C:\\Users\\Samuel Pelletier\\Desktop\\GitCommerce\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
+      "outputPath": "C:\\Users\\Samuel Pelletier\\Desktop\\GitCommerce\\RetroMarket\\src\\RetroMarket\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.0"

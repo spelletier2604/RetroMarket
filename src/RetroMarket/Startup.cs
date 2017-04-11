@@ -10,11 +10,8 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
-<<<<<<< HEAD
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-=======
 using Sakura.AspNetCore.Mvc;
->>>>>>> origin/master
 
 namespace RetroMarket
 {
@@ -36,11 +33,8 @@ namespace RetroMarket
                 options.UseSqlServer(
                     Configuration["Data:SportStoreProducts:ConnectionString"]));
 
-            services.AddDbContext<AppIdentityDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration["Data:RetroMarketIdentity:ConnectionString"]));
             services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppIdentityDbContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddTransient<IProductRepository, EFProductRepository>();
             services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
