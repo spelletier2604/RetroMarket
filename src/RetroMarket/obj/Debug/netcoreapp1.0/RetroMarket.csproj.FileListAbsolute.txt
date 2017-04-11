@@ -170,3 +170,11 @@ C:\Users\Samuel Pelletier\Desktop\GitCommerce\RetroMarket\src\RetroMarket\bin\De
 C:\Users\Samuel Pelletier\Desktop\GitCommerce\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\fr\RetroMarket.resources.dll
 C:\Users\Samuel Pelletier\Desktop\GitCommerce\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\en\RetroMarket.resources.dll
 C:\Users\Samuel Pelletier\Desktop\GitCommerce\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\fr\RetroMarket.resources.dll
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Product.List.en.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Product.List.fr.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.en.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.fr.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.en.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.fr.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.en.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.fr.resources

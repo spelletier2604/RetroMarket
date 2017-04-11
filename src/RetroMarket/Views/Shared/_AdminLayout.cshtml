@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -20,7 +23,7 @@
         <h4>
             @ViewBag.Title
             <a class="btn btn-sm btn-primary pull-right"
-                 asp-action="Logout" asp-controller="Account">Log Out</a>
+                 asp-action="Logout" asp-controller="Account">@Localizer["Logout"]</a>
         </h4>
     </div>
     <div class="panel-body">

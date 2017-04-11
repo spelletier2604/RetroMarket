@@ -29,7 +29,7 @@ namespace RetroMarket.Controllers
                     {
                         if (motrecherche != null && champrec != null)
                         {
-                            if (champrec == "Nom")
+                            if (champrec == "Nom" || champrec == "Name")
                             {
                                 if (p.Category == category)
                                     return p.Name.ToUpper().Contains(motrecherche.ToUpper());
@@ -56,9 +56,9 @@ namespace RetroMarket.Controllers
                     {
                         if (ordretri != null)
                         {
-                            if (ordretri == "Nom")
+                            if (ordretri == "Nom" || ordretri == "Name")
                                 return p.Name;
-                            else if (ordretri == "Prix")
+                            else if (ordretri == "Prix" || ordretri == "Price")
                                 return p.Price;
                         }
                         return p.ProductID;

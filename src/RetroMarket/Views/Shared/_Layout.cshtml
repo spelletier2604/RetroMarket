@@ -17,7 +17,6 @@
         <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="Home" asp-action="Index">@Localizer["Home"]</a>
         <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="Home" asp-action="About">@Localizer["About"]</a>
         <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="Home" asp-action="Contact">@Localizer["Contact"]</a>
-S
         <div class="pull-right">
             @await Component.InvokeAsync("CartSummary")
         </div>
@@ -26,14 +25,14 @@ S
 
             <div class="pull-right" style="margin-top:10px">
                 <a class="btn btn-sm btn-primary"
-                   asp-action="Login" asp-controller="Account">Login</a>
+                   asp-action="Login" asp-controller="Account">@Localizer["Login"]</a>
             </div>
         }
         else
         {
             <div class="pull-right" style="margin-top:10px">
                 <a class="btn btn-sm btn-primary"
-                   asp-action="Logout" asp-controller="Account">Log out</a>
+                   asp-action="Logout" asp-controller="Account">@Localizer["Logout"]</a>
             </div>
         }
 
