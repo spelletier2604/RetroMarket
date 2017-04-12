@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace RetroMarket.Models
 {
@@ -22,5 +23,6 @@ namespace RetroMarket.Models
         public string Corps { get; set; }
 
         // Propriété à ajouter pour l'auteur.
+        public IdentityUser Auteur { get; set; }
     }
 }

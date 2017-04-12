@@ -238,6 +238,8 @@ namespace RetroMarket.Migrations
                     b.Property<int>("CommentaireID")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("AuteurId");
+
                     b.Property<string>("Corps")
                         .IsRequired();
 
@@ -247,6 +249,8 @@ namespace RetroMarket.Migrations
                         .IsRequired();
 
                     b.HasKey("CommentaireID");
+
+                    b.HasIndex("AuteurId");
 
                     b.ToTable("Commentaires");
                 });
@@ -396,6 +400,13 @@ namespace RetroMarket.Migrations
                     b.HasOne("RetroMarket.Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductID");
+                });
+
+            modelBuilder.Entity("RetroMarket.Models.Commentaire", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUser", "Auteur")
+                        .WithMany()
+                        .HasForeignKey("AuteurId");
                 });
 
             modelBuilder.Entity("RetroMarket.Models.Product", b =>
