@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\css\background.css" />
     <Content Include="wwwroot\lib\Images\background.jpg" />
     <Content Include="wwwroot\lib\Images\Logo.png" />
     <Content Include="wwwroot\lib\Images\Logo_-_Pink.PNG" />
