@@ -1,0 +1,45 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@model IEnumerable<Order>
+@{
+    ViewBag.Title = "Orders";
+    Layout = "_Layout";
+}
+@if (Model.Count() > 0)
+{
+    <table class="table table-bordered table-striped">
+        <tr><th>@Localizer["Name"]</th><th>@Localizer["Zip"]</th><th colspan="2">@Localizer["Details"]</th><th>Status</th></tr>
+        @foreach (Order o in Model)
+        {
+            <tr>
+                <td>@o.Name</td>
+                <td>@o.Zip</td>
+                <th>@Localizer["Product"]</th>
+                <th>@Localizer["Quantity"]</th>
+                
+                    @if (@o.Shipped == true)
+                    { 
+                       <th>Shipped </th>
+                    }
+                    else
+                    {
+                        <th>Pending </th>
+                    }
+            </tr>
+            @foreach (CartLine line in o.Lines)
+            {
+                <tr>
+                    <td colspan="2"></td>
+                    <td>@line.Product.Name</td>
+                    <td>@line.Quantity</td>
+                    <td></td>
+                </tr>
+            }
+        }
+    </table>
+}
+else
+{
+    <div class="text-center">@Localizer["Unshipped"]</div>
+}

@@ -34,5 +34,8 @@ namespace RetroMarket.Models {
         public string Country { get; set; }
 
         public bool GiftWrap { get; set; }
+        [BindNever]
+        public string UserId { get; set; }
+
     }
 }

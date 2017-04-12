@@ -178,3 +178,11 @@ C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netc
 C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.fr.resources
 C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.en.resources
 C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.fr.resources
+C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.en.resources
+C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.fr.resources
+C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Product.List.en.resources
+C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Product.List.fr.resources
+C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.en.resources
+C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.fr.resources
+C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.en.resources
+C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.fr.resources

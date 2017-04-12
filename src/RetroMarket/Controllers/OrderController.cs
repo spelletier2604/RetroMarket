@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RetroMarket.Models;
 using System.Linq;
+using System.Security.Claims;
 
 namespace RetroMarket.Controllers
 {
@@ -45,6 +46,7 @@ namespace RetroMarket.Controllers
             }
             if (ModelState.IsValid)
             {
+                order.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 order.Lines = cart.Lines.ToArray();
                 repository.SaveOrder(order);
                 return RedirectToAction(nameof(Completed));

@@ -295,6 +295,8 @@ namespace RetroMarket.Migrations
                     b.Property<string>("State")
                         .IsRequired();
 
+                    b.Property<string>("UserId");
+
                     b.Property<string>("Zip");
 
                     b.HasKey("OrderID");
