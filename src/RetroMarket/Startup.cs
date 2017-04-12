@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Sakura.AspNetCore.Mvc;
+using RetroMarket.Services;
 
 namespace RetroMarket
 {
@@ -41,6 +42,12 @@ namespace RetroMarket
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<IOrderRepository, EFOrderRepository>();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddIdentity<IdentityUser, IdentityRole>(config =>
+            {
+                config.SignIn.RequireConfirmedEmail = true;
+            })
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
             services.AddMvc()
                     .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
                     .AddDataAnnotationsLocalization();
@@ -64,6 +71,11 @@ namespace RetroMarket
                 // Use default pager options.
                 options.ConfigureDefault();
             });
+           
+            // Add application services.
+            services.AddTransient<IEmailSender, AuthMessageSender>();
+            services.AddTransient<ISmsSender, AuthMessageSender>();
+          
         }
 
         public void Configure(IApplicationBuilder app,

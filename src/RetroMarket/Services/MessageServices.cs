@@ -39,7 +39,7 @@ namespace RetroMarket.Services
                 client.AuthenticationMechanisms.Remove("XOAUTH2");
 
                 // Note: only needed if the SMTP server requires authentication
-                client.Authenticate("retromarketbla@gmail.com", "Qwerty1234!");   // ICI Hardcoder                 
+                client.Authenticate("renaud.gariepy.cegep@gmail.com", "Cegep01$");   // ICI Hardcoder                 
                 await client.SendAsync(monMessage);
                 client.Disconnect(true);
             }

@@ -59,7 +59,7 @@ namespace RetroMarket.Controllers
             if (ModelState.IsValid)
             {
                 IdentityUser user =
-                await _userManager.FindByNameAsync(loginModel.Name);
+                await _userManager.FindByEmailAsync(loginModel.Email);
                 if (user != null)
                 {
                     if (!await _userManager.IsEmailConfirmedAsync(user))
@@ -68,12 +68,12 @@ namespace RetroMarket.Controllers
                         return View(loginModel);
                     }
 
-                    /*await _signInManager.SignOutAsync();
+                    await _signInManager.SignOutAsync();
                     if ((await _signInManager.PasswordSignInAsync(user,
                     loginModel.Password, false, false)).Succeeded)
                     {
                         return Redirect(loginModel?.ReturnUrl ?? "/Home");
-                    }*/
+                    }
                 }
             }
             ModelState.AddModelError("", "Invalid name or password");
@@ -81,7 +81,6 @@ namespace RetroMarket.Controllers
         }
 
         // GET
-        [HttpPost]
         [AllowAnonymous]
         public IActionResult Register(string returnUrl = null)
         {
@@ -98,7 +97,7 @@ namespace RetroMarket.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new IdentityUser { UserName = model.Email, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
