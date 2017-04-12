@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "4b41f38011c55a5cc5288e28f153867597f5d529"
+    "signature": "4ab9c4ea2abd0b0767d8125b8c32a04e085945f9"
   },
   "compilationOptions": {
     "defines": [
@@ -23,13 +23,11 @@
     ".NETCoreApp,Version=v1.0": {
       "retromarket/1.0.0": {
         "dependencies": {
-          "MailKit": "1.14.1",
           "Microsoft.AspNetCore": "1.1.1",
           "Microsoft.AspNetCore.Diagnostics": "1.1.1",
           "Microsoft.AspNetCore.Http.Extensions": "1.1.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.1.1",
           "Microsoft.AspNetCore.Mvc": "1.1.2",
-          "Microsoft.AspNetCore.Rewrite": "1.0.1",
           "Microsoft.AspNetCore.Server.IISIntegration": "1.1.1",
           "Microsoft.AspNetCore.Server.Kestrel": "1.1.1",
           "Microsoft.AspNetCore.Session": "1.1.1",
@@ -46,8 +44,7 @@
           "Microsoft.VisualStudio.Web.BrowserLink": "1.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "1.0.0",
           "Sakura.AspNetCore.Mvc.PagedList": "2.0.12",
-          "Sakura.AspNetCore.PagedList": "2.0.1",
-          "Sendgrid": "9.1.0"
+          "Sakura.AspNetCore.PagedList": "2.0.1"
         },
         "runtime": {
           "RetroMarket.dll": {}
@@ -62,27 +59,6 @@
         },
         "compile": {
           "RetroMarket.dll": {}
-        }
-      },
-      "mailkit/1.14.1": {
-        "dependencies": {
-          "MimeKit": "1.14.0",
-          "NETStandard.Library": "1.6.1",
-          "Portable.BouncyCastle": "1.8.1.2",
-          "System.Data.Common": "4.3.0",
-          "System.Globalization.Extensions": "4.3.0",
-          "System.Net.NameResolution": "4.3.0",
-          "System.Net.NetworkInformation": "4.3.0",
-          "System.Net.Security": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Text.Encoding.CodePages": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/MailKit.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.3/MailKit.dll": {}
         }
       },
       "microsoft.aspnetcore/1.1.1": {
@@ -697,23 +673,6 @@
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {}
-        }
-      },
-      "microsoft.aspnetcore.rewrite/1.0.1": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Hosting.Abstractions": "1.1.1",
-          "Microsoft.AspNetCore.Http.Extensions": "1.1.1",
-          "Microsoft.Extensions.Configuration.Abstractions": "1.1.1",
-          "Microsoft.Extensions.FileProviders.Abstractions": "1.1.0",
-          "Microsoft.Extensions.Logging.Abstractions": "1.1.1",
-          "Microsoft.Extensions.Options": "1.1.1",
-          "NETStandard.Library": "1.6.1"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Rewrite.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Rewrite.dll": {}
         }
       },
       "microsoft.aspnetcore.routing/1.1.1": {
@@ -1561,25 +1520,6 @@
           "ref/netstandard1.3/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "mimekit/1.14.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "Portable.BouncyCastle": "1.8.1.2",
-          "System.Data.Common": "4.3.0",
-          "System.Globalization.Extensions": "4.3.0",
-          "System.Net.NameResolution": "4.3.0",
-          "System.Net.NetworkInformation": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Text.Encoding.CodePages": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/MimeKit.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.3/MimeKit.dll": {}
-        }
-      },
       "netstandard.library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1669,17 +1609,6 @@
         },
         "compile": {
           "lib/netstandard1.3/NuGet.Frameworks.dll": {}
-        }
-      },
-      "portable.bouncycastle/1.8.1.2": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "runtime": {
-          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
         }
       },
       "remotion.linq/2.1.1": {
@@ -1892,19 +1821,6 @@
         },
         "compile": {
           "lib/netstandard1.0/Sakura.AspNetCore.PagedList.Abstractions.dll": {}
-        }
-      },
-      "sendgrid/9.1.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "1.1.1",
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "9.0.1"
-        },
-        "runtime": {
-          "lib/netstandard1.3/SendGrid.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.3/SendGrid.dll": {}
         }
       },
       "system.appcontext/4.3.0": {
@@ -2614,50 +2530,6 @@
           "ref/netstandard1.3/System.Net.NameResolution.dll": {}
         }
       },
-      "system.net.networkinformation/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.Win32.Primitives": "4.3.0",
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.IO.FileSystem": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Net.Primitives": "4.3.0",
-          "System.Net.Sockets": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Principal.Windows": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Overlapped": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Thread": "4.3.0",
-          "System.Threading.ThreadPool": "4.3.0",
-          "runtime.native.System": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtimes/linux/lib/netstandard1.3/System.Net.NetworkInformation.dll": {
-            "rid": "linux",
-            "assetType": "runtime"
-          },
-          "runtimes/osx/lib/netstandard1.3/System.Net.NetworkInformation.dll": {
-            "rid": "osx",
-            "assetType": "runtime"
-          },
-          "runtimes/win/lib/netstandard1.3/System.Net.NetworkInformation.dll": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Net.NetworkInformation.dll": {}
-        }
-      },
       "system.net.primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -3314,9 +3186,6 @@
             "rid": "win",
             "assetType": "runtime"
           }
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "system.text.encoding.extensions/4.3.0": {
@@ -3901,13 +3770,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "mailkit/1.14.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JWBaVINVnojh8RzNemxzmhb/xu1kOmKKjIzTBhaGxPmJ2AEB6AgKyVXNiyaGtZ7YFEFLKWhGcETXTw3og2Ws1g==",
-      "path": "mailkit/1.14.1",
-      "hashPath": "mailkit.1.14.1.nupkg.sha512"
-    },
     "microsoft.aspnetcore/1.1.1": {
       "type": "package",
       "serviceable": true,
@@ -3925,22 +3787,14 @@
     "microsoft.aspnetcore.authentication/1.1.1": {
       "type": "package",
       "serviceable": true,
-<<<<<<< HEAD
-      "sha512": "sha512-KQ39XT2JiQOTdA+/OeXNNAw8cBh5D6N+qKc7bXdtaZH6aXcCL8Au5N6AVtLtwJnr603Rn6ZtuimZNFC7XOz5WA==",
-=======
       "sha512": "sha512-CPeL0ygrHSnraLNGCAiYCew1GcXhewHDMZxDuCIK6ivVO4j/vqp5/J2swqQCENeiw93AkBXYcLY1wS1+HVQZbg==",
->>>>>>> origin/master
       "path": "microsoft.aspnetcore.authentication/1.1.1",
       "hashPath": "microsoft.aspnetcore.authentication.1.1.1.nupkg.sha512"
     },
     "microsoft.aspnetcore.authentication.cookies/1.1.1": {
       "type": "package",
       "serviceable": true,
-<<<<<<< HEAD
-      "sha512": "sha512-YNTHmYXQGfuk5/3o0WpcCeZniBfsoVC4QC35ZfxYJ8E/P6OAmZnNc1N860jWl3Aev7Kp5AEbqUlthJS4PtizoA==",
-=======
       "sha512": "sha512-3LCmKpyaQocfdIBb7B/x/yxEHj74jkbTOfRHH8pMeLAwn3wyZsyrrWXGFhZ2E7Lb9uXRVgi4trSVZ+2AF+JlUQ==",
->>>>>>> origin/master
       "path": "microsoft.aspnetcore.authentication.cookies/1.1.1",
       "hashPath": "microsoft.aspnetcore.authentication.cookies.1.1.1.nupkg.sha512"
     },
@@ -3968,11 +3822,7 @@
     "microsoft.aspnetcore.cryptography.keyderivation/1.1.1": {
       "type": "package",
       "serviceable": true,
-<<<<<<< HEAD
-      "sha512": "sha512-sSfIghqM0VgbQ6cX4ieYywrZu7viAmvEozqruFXJy6XOJu3ceZdpaLMC+C4nJRr/76VSA+KvkSlD1ICCYeI8SA==",
-=======
       "sha512": "sha512-FGn4Ek+o0UYeD8G5aU4soG7LPGK63dqWwS3R7HMkviq0jWM4ftOZ6LbmoHO6TJH80Jiti2cNV8iyySgInlcCYQ==",
->>>>>>> origin/master
       "path": "microsoft.aspnetcore.cryptography.keyderivation/1.1.1",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.1.1.1.nupkg.sha512"
     },
@@ -4070,22 +3920,14 @@
     "microsoft.aspnetcore.identity/1.1.1": {
       "type": "package",
       "serviceable": true,
-<<<<<<< HEAD
-      "sha512": "sha512-cSNJ3D0kfkW/TSEnvdIShEysrAX2D7sRzRCwNwrElhm+YzzG9WBY4a0+pWuz/1uFMMoOY9MfszhhHNBcNtWCCQ==",
-=======
       "sha512": "sha512-RZ8HJMeReuxdvLt1gIdBRWswpjPKjq7i4pvjtpxfQQJHx1t8OEFLa0bbHxcA9aCQ8waH2WoGJ01UgDARP/njwg==",
->>>>>>> origin/master
       "path": "microsoft.aspnetcore.identity/1.1.1",
       "hashPath": "microsoft.aspnetcore.identity.1.1.1.nupkg.sha512"
     },
     "microsoft.aspnetcore.identity.entityframeworkcore/1.1.1": {
       "type": "package",
       "serviceable": true,
-<<<<<<< HEAD
-      "sha512": "sha512-ah1BFKtuzYMGg0NeAJ7f3Iay3yCTNrEJKMspmECS4hl6uuV+Nit53VWKhdkr63yDsCZOHCtozGSas5hF2GJUzw==",
-=======
       "sha512": "sha512-MFyRVpxaf1/gw1Gx4NBwm8vPxcC19JjrgnjoS+0D+EEvXVgEglaV1OF1NOxgQnDowibPAzfk3KLlozbCSjLEpQ==",
->>>>>>> origin/master
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/1.1.1",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.1.1.1.nupkg.sha512"
     },
@@ -4207,13 +4049,6 @@
       "sha512": "sha512-pM/6pXfU3YaXFj2V7y37Z/jIbKVfXfny+eqxbZSCZVdt+7yESMiHmW9pkMOy1j3P2vZxavgJDXK4bwVOyypxdw==",
       "path": "microsoft.aspnetcore.responsecaching.abstractions/1.1.1",
       "hashPath": "microsoft.aspnetcore.responsecaching.abstractions.1.1.1.nupkg.sha512"
-    },
-    "microsoft.aspnetcore.rewrite/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-je40DcMsmnEHV4AN5D6+vFbHvNOMVhvn8yqqf6LlKDFzrxfs3pq9XxL8LmJ/a08DM3ctaeh8HlgsLMU2866cZw==",
-      "path": "microsoft.aspnetcore.rewrite/1.0.1",
-      "hashPath": "microsoft.aspnetcore.rewrite.1.0.1.nupkg.sha512"
     },
     "microsoft.aspnetcore.routing/1.1.1": {
       "type": "package",
@@ -4642,13 +4477,6 @@
       "path": "microsoft.win32.registry/4.3.0",
       "hashPath": "microsoft.win32.registry.4.3.0.nupkg.sha512"
     },
-    "mimekit/1.14.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-RqhW0dv5b5HlVcfP2V4FwF3WDRU1Yxn096uIxVKcv206jg20kk+JXW47NzGYb74xDFwY5gkuXQwMrg+8MrZ8oQ==",
-      "path": "mimekit/1.14.0",
-      "hashPath": "mimekit.1.14.0.nupkg.sha512"
-    },
     "netstandard.library/1.6.1": {
       "type": "package",
       "serviceable": true,
@@ -4669,13 +4497,6 @@
       "sha512": "sha512-mj7pCguESABXPe27wleBICqbo1h0nm1bdfQN9GSUnKOdWI2QNhE3AB0SvAWrD0PYanzG65thsbCeB/uLj+XSwg==",
       "path": "nuget.frameworks/3.5.0",
       "hashPath": "nuget.frameworks.3.5.0.nupkg.sha512"
-    },
-    "portable.bouncycastle/1.8.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-G0pWrYwtjjiyka+twqqphegc4ddDWskvf2uWu2YiAUNdaAz0UYa/eXBlt+xjafby5Opa6J1ySw5MPezwiGi9aQ==",
-      "path": "portable.bouncycastle/1.8.1.2",
-      "hashPath": "portable.bouncycastle.1.8.1.2.nupkg.sha512"
     },
     "remotion.linq/2.1.1": {
       "type": "package",
@@ -4844,13 +4665,6 @@
       "sha512": "sha512-oUlEi6NRtcBM8++U5mUf18B7gTri/dKJdrEvQvNb5Qc1z84IQwk93WTCDTudTDEEst1fbIyhGDsMlzGHUNVYKQ==",
       "path": "sakura.aspnetcore.pagedlist.abstractions/2.0.0",
       "hashPath": "sakura.aspnetcore.pagedlist.abstractions.2.0.0.nupkg.sha512"
-    },
-    "sendgrid/9.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-WyJbAdIy6j+CZX5Oxd+DKCUnO+21G0Jkvn5MGu90AFTl29N4BvXW/xkcgyEk+r+9dRyYvNlkV/JW7QlLF8LJWw==",
-      "path": "sendgrid/9.1.0",
-      "hashPath": "sendgrid.9.1.0.nupkg.sha512"
     },
     "system.appcontext/4.3.0": {
       "type": "package",
@@ -5110,13 +4924,6 @@
       "sha512": "sha512-AFYl08R7MrsrEjqpQWTZWBadqXyTzNDaWpMqyxhb0d6sGhV6xMDKueuBXlLL30gz+DIRY6MpdgnHWlCh5wmq9w==",
       "path": "system.net.nameresolution/4.3.0",
       "hashPath": "system.net.nameresolution.4.3.0.nupkg.sha512"
-    },
-    "system.net.networkinformation/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zNVmWVry0pAu7lcrRBhwwU96WUdbsrGL3azyzsbXmVNptae1+Za+UgOe9Z6s8iaWhPn7/l4wQqhC56HZWq7tkg==",
-      "path": "system.net.networkinformation/4.3.0",
-      "hashPath": "system.net.networkinformation.4.3.0.nupkg.sha512"
     },
     "system.net.primitives/4.3.0": {
       "type": "package",
