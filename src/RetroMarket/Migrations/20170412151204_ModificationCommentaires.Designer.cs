@@ -8,9 +8,10 @@ using RetroMarket.Models;
 namespace RetroMarket.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170412151204_ModificationCommentaires")]
+    partial class ModificationCommentaires
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.1")
@@ -298,8 +299,6 @@ namespace RetroMarket.Migrations
 
                     b.Property<string>("State")
                         .IsRequired();
-
-                    b.Property<string>("UserId");
 
                     b.Property<string>("Zip");
 

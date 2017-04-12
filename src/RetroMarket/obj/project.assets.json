@@ -4245,7 +4245,11 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication/1.1.1": {
+<<<<<<< HEAD
       "sha512": "5M2o8+xlgn/mu/qmovBoqiSq3VBc0FikkM6HN4wpohI2RCgg2pP22PV4haCc4ypd3XrMWWPQzm5o2arFt8aBJg==",
+=======
+      "sha512": "KQ39XT2JiQOTdA+/OeXNNAw8cBh5D6N+qKc7bXdtaZH6aXcCL8Au5N6AVtLtwJnr603Rn6ZtuimZNFC7XOz5WA==",
+>>>>>>> origin/master
       "type": "package",
       "path": "microsoft.aspnetcore.authentication/1.1.1",
       "files": [
@@ -4258,7 +4262,11 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication.Cookies/1.1.1": {
+<<<<<<< HEAD
       "sha512": "8MiijS70X0v4Ja3XSIsheGb6sbPovFr+/2hNGhTmbk/sqDLbsFx6EIUiJjRDOFpSbUsZDCv+tvgzw2DRMZVmww==",
+=======
+      "sha512": "YNTHmYXQGfuk5/3o0WpcCeZniBfsoVC4QC35ZfxYJ8E/P6OAmZnNc1N860jWl3Aev7Kp5AEbqUlthJS4PtizoA==",
+>>>>>>> origin/master
       "type": "package",
       "path": "microsoft.aspnetcore.authentication.cookies/1.1.1",
       "files": [
@@ -4310,7 +4318,11 @@
       ]
     },
     "Microsoft.AspNetCore.Cryptography.KeyDerivation/1.1.1": {
+<<<<<<< HEAD
       "sha512": "ek51fKmGWKE19dwHdvLcC5PrlNC5Kg62DLIziS7YWUrIH2sVQNP1/5FhW62NCpgsqelhqkJarzddEQ4PW1vmRw==",
+=======
+      "sha512": "sSfIghqM0VgbQ6cX4ieYywrZu7viAmvEozqruFXJy6XOJu3ceZdpaLMC+C4nJRr/76VSA+KvkSlD1ICCYeI8SA==",
+>>>>>>> origin/master
       "type": "package",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/1.1.1",
       "files": [
@@ -4490,7 +4502,11 @@
       ]
     },
     "Microsoft.AspNetCore.Identity/1.1.1": {
+<<<<<<< HEAD
       "sha512": "IwpzI/gBvYNtd9rCU9FNpC280IdId6cCzdNYeZ3caWypdUu/kG4zJMvO1snySyMRib3MDs907yXlEcGGfu1gQw==",
+=======
+      "sha512": "cSNJ3D0kfkW/TSEnvdIShEysrAX2D7sRzRCwNwrElhm+YzzG9WBY4a0+pWuz/1uFMMoOY9MfszhhHNBcNtWCCQ==",
+>>>>>>> origin/master
       "type": "package",
       "path": "microsoft.aspnetcore.identity/1.1.1",
       "files": [
@@ -4503,7 +4519,11 @@
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/1.1.1": {
+<<<<<<< HEAD
       "sha512": "oHdDnjYpv/Lp5KTmsri4LFAjcht7dWFsSV8F62Dr9Q9yt98rKdzoLWbzeO4xECqqPGnX1FjOOvksvw7xSpaUlA==",
+=======
+      "sha512": "ah1BFKtuzYMGg0NeAJ7f3Iay3yCTNrEJKMspmECS4hl6uuV+Nit53VWKhdkr63yDsCZOHCtozGSas5hF2GJUzw==",
+>>>>>>> origin/master
       "type": "package",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/1.1.1",
       "files": [
@@ -10903,15 +10923,26 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Renaud\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Alexandr\\.nuget\\packages\\": {}
+>>>>>>> origin/master
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Cegep\\Hivers 2017\\web\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
       "projectName": "RetroMarket",
       "projectPath": "C:\\Cegep\\Hivers 2017\\web\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
       "outputPath": "C:\\Cegep\\Hivers 2017\\web\\RetroMarket\\src\\RetroMarket\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Alexandr\\Desktop\\GEJ\\Nouveau Clone\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
+      "projectName": "RetroMarket",
+      "projectPath": "C:\\Users\\Alexandr\\Desktop\\GEJ\\Nouveau Clone\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
+      "outputPath": "C:\\Users\\Alexandr\\Desktop\\GEJ\\Nouveau Clone\\RetroMarket\\src\\RetroMarket\\obj\\",
+>>>>>>> origin/master
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.0"

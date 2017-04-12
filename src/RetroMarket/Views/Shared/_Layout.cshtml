@@ -8,6 +8,13 @@
     <link rel="stylesheet" asp-href-include="/lib/fontawesome/css/*.css" />
     <meta charset="utf-8">
     <title>RetroMarket</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/background.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/background.css" asp-append-version="true" />
+    </environment>
 </head>
 <body>
     <div class="navbar navbar-inverse" role="navigation" style="margin:0px">
@@ -40,7 +47,7 @@
 
 
     </div>
-    <div class="row panel">
+    <div class="alignment body-content, row panel" style="margin-bottom:0px">
         <div id="categories" class="col-xs-3">
             @await Component.InvokeAsync("NavigationMenu")
         </div>
@@ -49,11 +56,11 @@
         </div>
     </div>
     <footer>
-        <div class="row">
-            <div class="col-md-6">
-                <p>&copy; 2017 - RetroMarket</p>
+        <div class="alignment body-content, row" style="background-color: #222">
+            <div class="col-md-6" >
+                <p style="color:deeppink">&copy; 2017 - RetroMarket</p>
             </div>
-            <div class="col-md-6 text-right">
+            <div class="col-md-6 text-right" style="color:deeppink">
                 @await Html.PartialAsync("_SelectLanguagePartial")
             </div>
         </div>

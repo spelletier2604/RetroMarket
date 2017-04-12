@@ -178,6 +178,7 @@ C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netc
 C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.fr.resources
 C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.en.resources
 C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.fr.resources
+<<<<<<< HEAD
 C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.en.resources
 C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.fr.resources
 C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Product.List.en.resources
@@ -186,3 +187,51 @@ C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\Ret
 C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.fr.resources
 C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.en.resources
 C:\Cegep\Hivers 2017\web\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.fr.resources
+=======
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\RetroMarket.deps.json
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\RetroMarket.runtimeconfig.json
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\RetroMarket.runtimeconfig.dev.json
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\RetroMarket.dll
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\RetroMarket.pdb
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\en\RetroMarket.resources.dll
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\fr\RetroMarket.resources.dll
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Admin.Edit.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Admin.Edit.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Admin.Index.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Admin.Index.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Cart.Index.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Cart.Index.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Home.About.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Home.About.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Home.Contact.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Home.Contact.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Home.Index.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Home.Index.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Order.Checkout.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Order.Checkout.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Order.Completed.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Order.Completed.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Order.List.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Order.List.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Product.List.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Product.List.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.CartSummary.Default.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.CartSummary.Default.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.ProductSummary.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.ProductSummary.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._Layout.en.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._Layout.fr.resources
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.csproj.GenerateResource.Cache
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.AssemblyInfo.cs
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\en\RetroMarket.resources.dll
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\fr\RetroMarket.resources.dll
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.dll
+C:\Users\Alexandr\Desktop\GEJ\Nouveau Clone\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.pdb
+>>>>>>> origin/master
