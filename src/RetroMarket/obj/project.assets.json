@@ -4245,11 +4245,7 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication/1.1.1": {
-<<<<<<< HEAD
-      "sha512": "5M2o8+xlgn/mu/qmovBoqiSq3VBc0FikkM6HN4wpohI2RCgg2pP22PV4haCc4ypd3XrMWWPQzm5o2arFt8aBJg==",
-=======
-      "sha512": "KQ39XT2JiQOTdA+/OeXNNAw8cBh5D6N+qKc7bXdtaZH6aXcCL8Au5N6AVtLtwJnr603Rn6ZtuimZNFC7XOz5WA==",
->>>>>>> origin/master
+      "sha512": "CPeL0ygrHSnraLNGCAiYCew1GcXhewHDMZxDuCIK6ivVO4j/vqp5/J2swqQCENeiw93AkBXYcLY1wS1+HVQZbg==",
       "type": "package",
       "path": "microsoft.aspnetcore.authentication/1.1.1",
       "files": [
@@ -4262,11 +4258,7 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication.Cookies/1.1.1": {
-<<<<<<< HEAD
-      "sha512": "8MiijS70X0v4Ja3XSIsheGb6sbPovFr+/2hNGhTmbk/sqDLbsFx6EIUiJjRDOFpSbUsZDCv+tvgzw2DRMZVmww==",
-=======
-      "sha512": "YNTHmYXQGfuk5/3o0WpcCeZniBfsoVC4QC35ZfxYJ8E/P6OAmZnNc1N860jWl3Aev7Kp5AEbqUlthJS4PtizoA==",
->>>>>>> origin/master
+      "sha512": "3LCmKpyaQocfdIBb7B/x/yxEHj74jkbTOfRHH8pMeLAwn3wyZsyrrWXGFhZ2E7Lb9uXRVgi4trSVZ+2AF+JlUQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.authentication.cookies/1.1.1",
       "files": [
@@ -4318,11 +4310,7 @@
       ]
     },
     "Microsoft.AspNetCore.Cryptography.KeyDerivation/1.1.1": {
-<<<<<<< HEAD
-      "sha512": "ek51fKmGWKE19dwHdvLcC5PrlNC5Kg62DLIziS7YWUrIH2sVQNP1/5FhW62NCpgsqelhqkJarzddEQ4PW1vmRw==",
-=======
-      "sha512": "sSfIghqM0VgbQ6cX4ieYywrZu7viAmvEozqruFXJy6XOJu3ceZdpaLMC+C4nJRr/76VSA+KvkSlD1ICCYeI8SA==",
->>>>>>> origin/master
+      "sha512": "FGn4Ek+o0UYeD8G5aU4soG7LPGK63dqWwS3R7HMkviq0jWM4ftOZ6LbmoHO6TJH80Jiti2cNV8iyySgInlcCYQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/1.1.1",
       "files": [
@@ -4502,11 +4490,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity/1.1.1": {
-<<<<<<< HEAD
-      "sha512": "IwpzI/gBvYNtd9rCU9FNpC280IdId6cCzdNYeZ3caWypdUu/kG4zJMvO1snySyMRib3MDs907yXlEcGGfu1gQw==",
-=======
-      "sha512": "cSNJ3D0kfkW/TSEnvdIShEysrAX2D7sRzRCwNwrElhm+YzzG9WBY4a0+pWuz/1uFMMoOY9MfszhhHNBcNtWCCQ==",
->>>>>>> origin/master
+      "sha512": "RZ8HJMeReuxdvLt1gIdBRWswpjPKjq7i4pvjtpxfQQJHx1t8OEFLa0bbHxcA9aCQ8waH2WoGJ01UgDARP/njwg==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity/1.1.1",
       "files": [
@@ -4519,11 +4503,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/1.1.1": {
-<<<<<<< HEAD
-      "sha512": "oHdDnjYpv/Lp5KTmsri4LFAjcht7dWFsSV8F62Dr9Q9yt98rKdzoLWbzeO4xECqqPGnX1FjOOvksvw7xSpaUlA==",
-=======
-      "sha512": "ah1BFKtuzYMGg0NeAJ7f3Iay3yCTNrEJKMspmECS4hl6uuV+Nit53VWKhdkr63yDsCZOHCtozGSas5hF2GJUzw==",
->>>>>>> origin/master
+      "sha512": "MFyRVpxaf1/gw1Gx4NBwm8vPxcC19JjrgnjoS+0D+EEvXVgEglaV1OF1NOxgQnDowibPAzfk3KLlozbCSjLEpQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/1.1.1",
       "files": [
@@ -4566,12 +4546,12 @@
       "type": "package",
       "path": "microsoft.aspnetcore.mvc/1.1.2",
       "files": [
+        "Microsoft.AspNetCore.Mvc.1.1.2.nupkg.sha512",
+        "Microsoft.AspNetCore.Mvc.nuspec",
         "lib/net451/Microsoft.AspNetCore.Mvc.dll",
         "lib/net451/Microsoft.AspNetCore.Mvc.xml",
         "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.dll",
-        "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.xml",
-        "microsoft.aspnetcore.mvc.1.1.2.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.nuspec"
+        "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.xml"
       ]
     },
     "Microsoft.AspNetCore.Mvc.Abstractions/1.1.2": {
@@ -4826,12 +4806,12 @@
       "type": "package",
       "path": "microsoft.aspnetcore.staticfiles/1.1.1",
       "files": [
+        "Microsoft.AspNetCore.StaticFiles.1.1.1.nupkg.sha512",
+        "Microsoft.AspNetCore.StaticFiles.nuspec",
         "lib/net451/Microsoft.AspNetCore.StaticFiles.dll",
         "lib/net451/Microsoft.AspNetCore.StaticFiles.xml",
         "lib/netstandard1.3/Microsoft.AspNetCore.StaticFiles.dll",
-        "lib/netstandard1.3/Microsoft.AspNetCore.StaticFiles.xml",
-        "microsoft.aspnetcore.staticfiles.1.1.1.nupkg.sha512",
-        "microsoft.aspnetcore.staticfiles.nuspec"
+        "lib/netstandard1.3/Microsoft.AspNetCore.StaticFiles.xml"
       ]
     },
     "Microsoft.AspNetCore.WebUtilities/1.1.1": {
@@ -5038,12 +5018,12 @@
       "type": "package",
       "path": "microsoft.entityframeworkcore/1.1.1",
       "files": [
-        "Microsoft.EntityFrameworkCore.1.1.1.nupkg.sha512",
-        "Microsoft.EntityFrameworkCore.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.xml",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.dll",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.xml"
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.xml",
+        "microsoft.entityframeworkcore.1.1.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Design/1.1.1": {
@@ -5051,12 +5031,12 @@
       "type": "package",
       "path": "microsoft.entityframeworkcore.design/1.1.1",
       "files": [
-        "Microsoft.EntityFrameworkCore.Design.1.1.1.nupkg.sha512",
-        "Microsoft.EntityFrameworkCore.Design.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Design.xml",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.xml"
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.1.1.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/1.1.1": {
@@ -5064,12 +5044,12 @@
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational/1.1.1",
       "files": [
-        "Microsoft.EntityFrameworkCore.Relational.1.1.1.nupkg.sha512",
-        "Microsoft.EntityFrameworkCore.Relational.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.xml",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.dll",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.xml"
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.xml",
+        "microsoft.entityframeworkcore.relational.1.1.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational.Design/1.1.1": {
@@ -5077,12 +5057,12 @@
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational.design/1.1.1",
       "files": [
-        "Microsoft.EntityFrameworkCore.Relational.Design.1.1.1.nupkg.sha512",
-        "Microsoft.EntityFrameworkCore.Relational.Design.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.xml",
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml"
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml",
+        "microsoft.entityframeworkcore.relational.design.1.1.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.design.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/1.1.1": {
@@ -5236,12 +5216,12 @@
       "type": "package",
       "path": "microsoft.extensions.configuration.json/1.1.1",
       "files": [
+        "Microsoft.Extensions.Configuration.Json.1.1.1.nupkg.sha512",
+        "Microsoft.Extensions.Configuration.Json.nuspec",
         "lib/net451/Microsoft.Extensions.Configuration.Json.dll",
         "lib/net451/Microsoft.Extensions.Configuration.Json.xml",
         "lib/netstandard1.3/Microsoft.Extensions.Configuration.Json.dll",
-        "lib/netstandard1.3/Microsoft.Extensions.Configuration.Json.xml",
-        "microsoft.extensions.configuration.json.1.1.1.nupkg.sha512",
-        "microsoft.extensions.configuration.json.nuspec"
+        "lib/netstandard1.3/Microsoft.Extensions.Configuration.Json.xml"
       ]
     },
     "Microsoft.Extensions.DependencyInjection/1.1.0": {
@@ -5401,12 +5381,12 @@
       "type": "package",
       "path": "microsoft.extensions.logging.debug/1.1.1",
       "files": [
+        "Microsoft.Extensions.Logging.Debug.1.1.1.nupkg.sha512",
+        "Microsoft.Extensions.Logging.Debug.nuspec",
         "lib/net451/Microsoft.Extensions.Logging.Debug.dll",
         "lib/net451/Microsoft.Extensions.Logging.Debug.xml",
         "lib/netstandard1.3/Microsoft.Extensions.Logging.Debug.dll",
-        "lib/netstandard1.3/Microsoft.Extensions.Logging.Debug.xml",
-        "microsoft.extensions.logging.debug.1.1.1.nupkg.sha512",
-        "microsoft.extensions.logging.debug.nuspec"
+        "lib/netstandard1.3/Microsoft.Extensions.Logging.Debug.xml"
       ]
     },
     "Microsoft.Extensions.ObjectPool/1.1.0": {
@@ -5648,12 +5628,12 @@
       "type": "package",
       "path": "microsoft.visualstudio.web.browserlink/1.1.0",
       "files": [
+        "Microsoft.VisualStudio.Web.BrowserLink.1.1.0.nupkg.sha512",
+        "Microsoft.VisualStudio.Web.BrowserLink.nuspec",
         "lib/net451/Microsoft.VisualStudio.Web.BrowserLink.dll",
         "lib/net451/Microsoft.VisualStudio.Web.BrowserLink.xml",
         "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.dll",
-        "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.xml",
-        "microsoft.visualstudio.web.browserlink.1.1.0.nupkg.sha512",
-        "microsoft.visualstudio.web.browserlink.nuspec"
+        "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.xml"
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/1.0.0": {
@@ -10923,26 +10903,15 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\Renaud\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\Alexandr\\.nuget\\packages\\": {}
->>>>>>> origin/master
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Cegep\\Hivers 2017\\web\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
+      "projectUniqueName": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
       "projectName": "RetroMarket",
-      "projectPath": "C:\\Cegep\\Hivers 2017\\web\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
-      "outputPath": "C:\\Cegep\\Hivers 2017\\web\\RetroMarket\\src\\RetroMarket\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\Alexandr\\Desktop\\GEJ\\Nouveau Clone\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
-      "projectName": "RetroMarket",
-      "projectPath": "C:\\Users\\Alexandr\\Desktop\\GEJ\\Nouveau Clone\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
-      "outputPath": "C:\\Users\\Alexandr\\Desktop\\GEJ\\Nouveau Clone\\RetroMarket\\src\\RetroMarket\\obj\\",
->>>>>>> origin/master
+      "projectPath": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
+      "outputPath": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\src\\RetroMarket\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.0"
