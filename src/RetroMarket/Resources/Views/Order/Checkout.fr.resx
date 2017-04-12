@@ -129,6 +129,9 @@
   <data name="Complete" xml:space="preserve">
     <value>Complétez la commande</value>
   </data>
+  <data name="Connected" xml:space="preserve">
+    <value>Vous devez être connecté pour pouvoir commander vos produits.</value>
+  </data>
   <data name="Country" xml:space="preserve">
     <value>Pays:</value>
   </data>

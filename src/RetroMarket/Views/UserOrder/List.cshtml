@@ -20,11 +20,11 @@
                 
                     @if (@o.Shipped == true)
                     { 
-                       <th>Shipped </th>
+                       <th>@Localizer["Shipped"]</th>
                     }
                     else
                     {
-                        <th>Pending </th>
+                        <th>@Localizer["Pending"]</th>
                     }
             </tr>
             @foreach (CartLine line in o.Lines)

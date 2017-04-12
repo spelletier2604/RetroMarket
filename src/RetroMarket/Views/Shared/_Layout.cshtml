@@ -26,10 +26,10 @@
         <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="Home" asp-action="Contact">@Localizer["Contact"]</a>
         @if (User.Identity.IsAuthenticated)
         {
-            <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="UserOrder" asp-action="List">@Localizer["Commandes"]</a>
+            <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="UserOrder" asp-action="List">@Localizer["Command"]</a>
             @if (User.Identity.Name == "Admin")
             {
-                <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="Admin" asp-action="Index">@Localizer["Administration"]</a>
+                <a style="color:aliceblue; margin-left:15px" asp-area="" asp-controller="Admin" asp-action="Index">@Localizer["Admin"]</a>
             }
         }
 

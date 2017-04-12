@@ -123,4 +123,10 @@
   <data name="Contact2" xml:space="preserve">
     <value>You can contact us on the following supports:</value>
   </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Visit our Facebook page!</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>Follow us on Twitter!</value>
+  </data>
 </root>

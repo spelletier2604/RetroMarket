@@ -117,25 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About" xml:space="preserve">
-    <value>About</value>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
   </data>
-  <data name="Admin" xml:space="preserve">
-    <value>Administration</value>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
   </data>
-  <data name="Command" xml:space="preserve">
-    <value>Commands</value>
+  <data name="Pending" xml:space="preserve">
+    <value>Pending</value>
   </data>
-  <data name="Contact" xml:space="preserve">
-    <value>Contact</value>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
   </data>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
   </data>
-  <data name="Login" xml:space="preserve">
-    <value>Login</value>
+  <data name="Ship" xml:space="preserve">
+    <value>Ship</value>
   </data>
-  <data name="Logout" xml:space="preserve">
-    <value>Log out</value>
+  <data name="Shipped" xml:space="preserve">
+    <value>Shipped</value>
+  </data>
+  <data name="Unshipped" xml:space="preserve">
+    <value>No order for this account</value>
+  </data>
+  <data name="Zip" xml:space="preserve">
+    <value>Zip</value>
   </data>
 </root>
