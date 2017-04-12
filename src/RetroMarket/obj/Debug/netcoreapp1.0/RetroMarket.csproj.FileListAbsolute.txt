@@ -170,6 +170,7 @@ C:\Users\Samuel Pelletier\Desktop\GitCommerce\RetroMarket\src\RetroMarket\bin\De
 C:\Users\Samuel Pelletier\Desktop\GitCommerce\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\fr\RetroMarket.resources.dll
 C:\Users\Samuel Pelletier\Desktop\GitCommerce\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\en\RetroMarket.resources.dll
 C:\Users\Samuel Pelletier\Desktop\GitCommerce\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\fr\RetroMarket.resources.dll
+<<<<<<< HEAD
 C:\Users\Alexandr\Desktop\GEJ\Projet\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\RetroMarket.deps.json
 C:\Users\Alexandr\Desktop\GEJ\Projet\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\RetroMarket.runtimeconfig.json
 C:\Users\Alexandr\Desktop\GEJ\Projet\RetroMarket\src\RetroMarket\bin\Debug\netcoreapp1.0\RetroMarket.runtimeconfig.dev.json
@@ -208,3 +209,13 @@ C:\Users\Alexandr\Desktop\GEJ\Projet\RetroMarket\src\RetroMarket\obj\Debug\netco
 C:\Users\Alexandr\Desktop\GEJ\Projet\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\fr\RetroMarket.resources.dll
 C:\Users\Alexandr\Desktop\GEJ\Projet\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.dll
 C:\Users\Alexandr\Desktop\GEJ\Projet\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.pdb
+=======
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Product.List.en.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Product.List.fr.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.en.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Account.Login.fr.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.en.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared._AdminLayout.fr.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.en.resources
+C:\Users\Utilisateur\Documents\GitHub\RetroMarket\src\RetroMarket\obj\Debug\netcoreapp1.0\RetroMarket.Resources.Views.Shared.Components.NavigationMenu.Default.fr.resources
+>>>>>>> origin/master

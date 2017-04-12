@@ -1,7 +1,11 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\Alexandr\\.nuget\\packages"
+=======
+      "C:\\Users\\Utilisateur\\.nuget\\packages"
+>>>>>>> origin/master
     ]
   }
 }

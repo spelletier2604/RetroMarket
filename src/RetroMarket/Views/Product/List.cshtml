@@ -1,7 +1,10 @@
-﻿@model IPagedList<Product>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@model IPagedList<Product>
 @{
-    SelectList liste_ordretri = new SelectList(new string[] { "Nom", "Prix" }, "Nom");
-    SelectList liste_recherche = new SelectList(new string[] { "Nom", "Description" }, "Nom");
+    SelectList liste_ordretri = new SelectList(new string[] { Localizer["Name"].Value, Localizer["Price"].Value }, Localizer["Name"]);
+    SelectList liste_recherche = new SelectList(new string[] { Localizer["Name"].Value, Localizer["Description"].Value }, Localizer["Name"]);
 }
 <div class="row">
     <form class="form-inline" asp-action="List"
@@ -10,15 +13,15 @@
           data-ajax-mode="replace"
           data-ajax-update=".Products">
         <div class="col-md-6">
-            Tri:
+            @Localizer["Sort"]
             <select name="ordretri" asp-items="@liste_ordretri" class="form-control"></select>
-            <input type="submit" name="Trier" class="btn btn-primary" />
+            <input type="submit" name="Trier" value="@Localizer["Sort2"].Value" class="btn btn-primary" />
         </div>
         <div class="col-md-6 text-right">
-            Recherche:
+            @Localizer["Search"]
             <input type="text" name="motrecherche" class="form-control" />
             <select name="champrec" asp-items="@liste_recherche" class="form-control"></select>
-            <input type="submit" value="Rechercher" class="btn btn-primary" />
+            <input type="submit" value="@Localizer["Search2"].Value" class="btn btn-primary" />
         </div>
     </form>
 </div>

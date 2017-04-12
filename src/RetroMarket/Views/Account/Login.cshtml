@@ -1,6 +1,9 @@
-﻿@model LoginModel
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@model LoginModel
 @{
-    ViewBag.Title = "Log In";
+    ViewBag.Title = Localizer["Login"];
     Layout = "_AdminLayout";
 }
 
@@ -8,14 +11,14 @@
 <form asp-action="Login" asp-controller="Account" method="post">
     <input type="hidden" asp-for="ReturnUrl" />
     <div class="form-group">
-        <label asp-for="Name"></label>
+        @Localizer["Name"]
         <div><span asp-validation-for="Name" class="text-danger"></span></div>
         <input asp-for="Name" class="form-control" />
     </div>
     <div class="form-group">
-        <label asp-for="Password"></label>
+        @Localizer["Password"]
         <div><span asp-validation-for="Password" class="text-danger"></span></div>
         <input asp-for="Password" class="form-control" />
     </div>
-    <button class="btn btn-primary" type="submit">Log In</button>
+    <button class="btn btn-primary" type="submit">@Localizer["Login2"]</button>
 </form>
