@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "4ab9c4ea2abd0b0767d8125b8c32a04e085945f9"
+    "signature": "37ccf0426d6e0e2af4d8d627a018032a801a4b26"
   },
   "compilationOptions": {
     "defines": [
@@ -44,7 +44,8 @@
           "Microsoft.VisualStudio.Web.BrowserLink": "1.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "1.0.0",
           "Sakura.AspNetCore.Mvc.PagedList": "2.0.12",
-          "Sakura.AspNetCore.PagedList": "2.0.1"
+          "Sakura.AspNetCore.PagedList": "2.0.1",
+          "Sendgrid": "9.1.0"
         },
         "runtime": {
           "RetroMarket.dll": {}
@@ -1821,6 +1822,19 @@
         },
         "compile": {
           "lib/netstandard1.0/Sakura.AspNetCore.PagedList.Abstractions.dll": {}
+        }
+      },
+      "sendgrid/9.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "1.1.1",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/SendGrid.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/SendGrid.dll": {}
         }
       },
       "system.appcontext/4.3.0": {
@@ -4665,6 +4679,13 @@
       "sha512": "sha512-oUlEi6NRtcBM8++U5mUf18B7gTri/dKJdrEvQvNb5Qc1z84IQwk93WTCDTudTDEEst1fbIyhGDsMlzGHUNVYKQ==",
       "path": "sakura.aspnetcore.pagedlist.abstractions/2.0.0",
       "hashPath": "sakura.aspnetcore.pagedlist.abstractions.2.0.0.nupkg.sha512"
+    },
+    "sendgrid/9.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WyJbAdIy6j+CZX5Oxd+DKCUnO+21G0Jkvn5MGu90AFTl29N4BvXW/xkcgyEk+r+9dRyYvNlkV/JW7QlLF8LJWw==",
+      "path": "sendgrid/9.1.0",
+      "hashPath": "sendgrid.9.1.0.nupkg.sha512"
     },
     "system.appcontext/4.3.0": {
       "type": "package",
