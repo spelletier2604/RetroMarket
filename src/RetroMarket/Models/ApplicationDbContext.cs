@@ -17,9 +17,13 @@ namespace RetroMarket.Models {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) { }
 
+        public ApplicationDbContext()
+        {
+        }
+
         /*public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }*/
 
-        
+
     }
 }

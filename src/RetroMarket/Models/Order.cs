@@ -1,11 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace RetroMarket.Models {
+namespace RetroMarket.Models
+{
 
-    public class Order {
-
+    public class Order
+    {
+        
+        [Key]
         [BindNever]
         public int OrderID { get; set; }
         [BindNever]

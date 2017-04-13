@@ -20,6 +20,7 @@ namespace RetroMarket.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        protected ApplicationDbContext app;
         private UserManager<IdentityUser> _userManager;
         private SignInManager<IdentityUser> _signInManager;
         private readonly IEmailSender _emailSender;
@@ -32,8 +33,10 @@ namespace RetroMarket.Controllers
         IOptions<IdentityCookieOptions> identityCookieOptions,
         IEmailSender emailSender,
         ISmsSender smsSender,
-        ILoggerFactory loggerFactory)
+        ILoggerFactory loggerFactory,
+        ApplicationDbContext appli)
         {
+            app = appli;
             _userManager = userMgr;
             _signInManager = signInMgr;
             _externalCookieScheme = identityCookieOptions.Value.ExternalCookieAuthenticationScheme;
@@ -58,22 +61,21 @@ namespace RetroMarket.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                IdentityUser user =
-                await _userManager.FindByEmailAsync(loginModel.Email);
+                IdentityUser user = app.Users.Where(x => x.Email == loginModel.Email).FirstOrDefault();
                 if (user != null)
                 {
-                    if (!await _userManager.IsEmailConfirmedAsync(user))
+                    if (!user.EmailConfirmed)
                     {
                         ModelState.AddModelError(string.Empty, "You must have a confirmed email to log in.");
                         return View(loginModel);
                     }
 
-                    await _signInManager.SignOutAsync();
-                    if ((await _signInManager.PasswordSignInAsync(user,
-                    loginModel.Password, false, false)).Succeeded)
+                    if (await _userManager.CheckPasswordAsync(user, loginModel.Password))
                     {
+                        await _signInManager.SignInAsync(user, false);
                         return Redirect(loginModel?.ReturnUrl ?? "/Home");
                     }
+                    await _signInManager.SignOutAsync();
                 }
             }
             ModelState.AddModelError("", "Invalid name or password");
@@ -109,6 +111,7 @@ namespace RetroMarket.Controllers
                         $"Please confirm your account by clicking this link: <a href='{callbackUrl}");
                     //await _signInManager.SignInAsync(user, isPersistent: false);
                     _logger.LogInformation(3, "User created a new account with password.");
+                    await _signInManager.SignInAsync(user, false);
                     return RedirectToLocal(returnUrl);
                 }
                 AddErrors(result);

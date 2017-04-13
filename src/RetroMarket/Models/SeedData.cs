@@ -1,6 +1,8 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace RetroMarket.Models {
 
@@ -50,6 +52,28 @@ namespace RetroMarket.Models {
                 );
                 context.SaveChanges();
             }
+
+            if (!context.Users.Any())
+            {
+                context.Users.Add(new IdentityUser()
+                {
+                    Email = "admin@admin.ca",
+                    PasswordHash = "AQAAAAEAACcQAAAAEI4zMV4+tIUkiWPjmrfMJyJN9bMLYWyvt4KONIPjgM1vYpTaD1E/PAb0VDJZRHCl0w==",
+                    EmailConfirmed = true,
+                    LockoutEnabled = false,
+                    UserName = "Admin",
+                    NormalizedEmail = "ADMIN@ADMIN.CA",
+                    NormalizedUserName = "ADMIN@ADMIN.CA",
+                    SecurityStamp = "b332ef47-ba39-4be4-9ecd-43b4ad758fdc",
+                    TwoFactorEnabled = false,
+                    PhoneNumberConfirmed = false,
+                    AccessFailedCount = 0
+                });
+                context.SaveChanges();
+            }
+
+
+            
         }
     }
 }

@@ -1,6 +1,9 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 
+
 <h2>@Localizer["Thanks"]</h2>
+<h3>Total Price (without taxes): @ViewData["Price"]</h3>
+<h3>Total Price (with taxes): @ViewData["Taxes"]</h3>
 <p>@Localizer["Thanks2"]</p>
 <p>@Localizer["Ship"]</p>

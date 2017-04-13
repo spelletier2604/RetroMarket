@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RetroMarket.Models;
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Claims;
 
@@ -16,6 +19,7 @@ namespace RetroMarket.Controllers
         {
             repository = repoService;
             cart = cartService;
+            ViewData.Add("Total", cart.ComputeTotalValue());
         }
 
         [Authorize]
@@ -35,7 +39,14 @@ namespace RetroMarket.Controllers
             return RedirectToAction(nameof(List));
         }
 
-        public ViewResult Checkout() => View(new Order());
+        public ViewResult Checkout()
+        {
+            Order order = new Order();
+
+            
+
+            return View(order);
+        }
 
         [HttpPost]
         public IActionResult Checkout(Order order)
@@ -49,7 +60,7 @@ namespace RetroMarket.Controllers
                 order.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 order.Lines = cart.Lines.ToArray();
                 repository.SaveOrder(order);
-                return RedirectToAction(nameof(Completed));
+                return RedirectToAction(nameof(Completed), order);
             }
             else
             {
@@ -57,8 +68,18 @@ namespace RetroMarket.Controllers
             }
         }
 
-        public ViewResult Completed()
+        public ViewResult Completed(Order orderer)
         {
+            TaxesCanada t = new TaxesCanada((TaxesCanada.Abbre)Enum.Parse(typeof(TaxesCanada.Abbre), orderer.State));
+            ViewData["Price"] = cart.ComputeTotalValue();
+            if (orderer.State == "QC")
+            {
+                ViewData["Taxes"] = ((float)cart.ComputeTotalValue() * (1 + t.GST + t.PST));
+            }
+            else
+            {
+                ViewData["Taxes"] = ((float)cart.ComputeTotalValue() * (1 + t.GST));
+            }
             cart.Clear();
             return View();
         }
