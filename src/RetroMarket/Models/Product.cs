@@ -16,6 +16,8 @@ namespace RetroMarket.Models {
         public decimal Price { get; set; }
         [Required(ErrorMessage = "Please specify a category")]
         public string Category { get; set; }
+        [Required(ErrorMessage = "Please specify a weight")]
+        public float Poids { get; set; }
 
         public TypeProduit Type { get; set; }
     }

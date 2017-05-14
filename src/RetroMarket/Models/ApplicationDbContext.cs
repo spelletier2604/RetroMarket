@@ -13,6 +13,7 @@ namespace RetroMarket.Models {
         public DbSet<Commentaire> Commentaires { get; set; }
         public DbSet<Compagnie> Compagnies { get; set; }
         public DbSet<TypeProduit> TypesProduit { get; set; }
+        public DbSet<Purolator> Purolator { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) { }

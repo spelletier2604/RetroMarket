@@ -14,11 +14,13 @@ namespace RetroMarket.Controllers
     {
         private IOrderRepository repository;
         private Cart cart;
+        private ApplicationDbContext _context;
 
-        public OrderController(IOrderRepository repoService, Cart cartService)
+        public OrderController(IOrderRepository repoService, Cart cartService, ApplicationDbContext context)
         {
             repository = repoService;
             cart = cartService;
+            _context = context;
             ViewData.Add("Total", cart.ComputeTotalValue());
         }
 
@@ -71,17 +73,48 @@ namespace RetroMarket.Controllers
         public ViewResult Completed(Order orderer)
         {
             TaxesCanada t = new TaxesCanada((TaxesCanada.Abbre)Enum.Parse(typeof(TaxesCanada.Abbre), orderer.State));
+            float montant = 0.0f;
             ViewData["Price"] = cart.ComputeTotalValue();
             if (orderer.State == "QC")
             {
-                ViewData["Taxes"] = ((float)cart.ComputeTotalValue() * (1 + t.GST + t.PST));
+                montant = ((float)cart.ComputeTotalValue() * (1 + t.GST + t.PST));
+                ViewData["Taxes"] = montant;
             }
             else
             {
-                ViewData["Taxes"] = ((float)cart.ComputeTotalValue() * (1 + t.GST));
+                montant = ((float)cart.ComputeTotalValue() * (1 + t.GST)); 
+                ViewData["Taxes"] = montant;
             }
+
+            ViewData["Transport"] = CalculTransport(cart);
+
             cart.Clear();
             return View();
+        }
+
+        public float CalculTransport(Cart cart)
+        {
+            float result = 0.0f;
+            float poids = 0.0f;
+
+            foreach (CartLine item in cart.Lines)
+            {
+                poids += item.Product.Poids;
+            }
+
+            /*Devrait s'assurer qu'on a un chiffre arrondie à la valeur
+             dizaine inférieur (Exemple 11 = 10)
+             Exemple de ce que le code fait:
+             56 / 10 = 5.6;
+             5.6 - 0.5 = 5.1;
+             Round(5.1) = 5;
+             5 * 10 = 50;
+             */
+            poids = (float)Math.Round(poids / 10 - 0.5) * 10;
+
+            result = _context.Purolator.FirstOrDefault(x => x.MargedePoid == (int)poids).Modificateur;
+
+            return result;
         }
     }
 }

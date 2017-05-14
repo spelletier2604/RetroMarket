@@ -8,9 +8,10 @@ using RetroMarket.Models;
 namespace RetroMarket.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170513202816_PurolatorPush")]
+    partial class PurolatorPush
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.1")
@@ -323,8 +324,6 @@ namespace RetroMarket.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired();
-
-                    b.Property<float>("Poids");
 
                     b.Property<decimal>("Price");
 
