@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RetroMarket.Models;
 using RetroMarket.Models.ViewModels;
+using Stripe;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -205,6 +206,28 @@ namespace RetroMarket.Controllers
             result = _context.Purolator.FirstOrDefault(x => x.MargedePoid == (int)poids).Modificateur;
 
             return result;
+        }
+
+        public IActionResult Charge(string stripeEmail, string stripeToken, int amount)
+        {
+            var customers = new StripeCustomerService();
+            var charges = new StripeChargeService();
+
+            var customer = customers.Create(new StripeCustomerCreateOptions
+            {
+                Email = stripeEmail,
+                SourceToken = stripeToken
+            });
+
+            var charge = charges.Create(new StripeChargeCreateOptions
+            {
+                Amount = amount,
+                Description = "Sample Charge",
+                Currency = "cad",
+                CustomerId = customer.Id
+            });
+
+            return View();
         }
     }
 }

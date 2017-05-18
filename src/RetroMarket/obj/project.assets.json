@@ -2036,6 +2036,20 @@
           "lib/netstandard1.0/Sakura.AspNetCore.PagedList.Abstractions.dll": {}
         }
       },
+      "Stripe.net/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Security.Cryptography.Algorithms": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.2/Stripe.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.2/Stripe.net.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4183,7 +4197,7 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication/1.1.1": {
-      "sha512": "CPeL0ygrHSnraLNGCAiYCew1GcXhewHDMZxDuCIK6ivVO4j/vqp5/J2swqQCENeiw93AkBXYcLY1wS1+HVQZbg==",
+      "sha512": "KQ39XT2JiQOTdA+/OeXNNAw8cBh5D6N+qKc7bXdtaZH6aXcCL8Au5N6AVtLtwJnr603Rn6ZtuimZNFC7XOz5WA==",
       "type": "package",
       "path": "microsoft.aspnetcore.authentication/1.1.1",
       "files": [
@@ -4196,7 +4210,7 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication.Cookies/1.1.1": {
-      "sha512": "3LCmKpyaQocfdIBb7B/x/yxEHj74jkbTOfRHH8pMeLAwn3wyZsyrrWXGFhZ2E7Lb9uXRVgi4trSVZ+2AF+JlUQ==",
+      "sha512": "YNTHmYXQGfuk5/3o0WpcCeZniBfsoVC4QC35ZfxYJ8E/P6OAmZnNc1N860jWl3Aev7Kp5AEbqUlthJS4PtizoA==",
       "type": "package",
       "path": "microsoft.aspnetcore.authentication.cookies/1.1.1",
       "files": [
@@ -4248,7 +4262,7 @@
       ]
     },
     "Microsoft.AspNetCore.Cryptography.KeyDerivation/1.1.1": {
-      "sha512": "FGn4Ek+o0UYeD8G5aU4soG7LPGK63dqWwS3R7HMkviq0jWM4ftOZ6LbmoHO6TJH80Jiti2cNV8iyySgInlcCYQ==",
+      "sha512": "sSfIghqM0VgbQ6cX4ieYywrZu7viAmvEozqruFXJy6XOJu3ceZdpaLMC+C4nJRr/76VSA+KvkSlD1ICCYeI8SA==",
       "type": "package",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/1.1.1",
       "files": [
@@ -4428,7 +4442,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity/1.1.1": {
-      "sha512": "RZ8HJMeReuxdvLt1gIdBRWswpjPKjq7i4pvjtpxfQQJHx1t8OEFLa0bbHxcA9aCQ8waH2WoGJ01UgDARP/njwg==",
+      "sha512": "cSNJ3D0kfkW/TSEnvdIShEysrAX2D7sRzRCwNwrElhm+YzzG9WBY4a0+pWuz/1uFMMoOY9MfszhhHNBcNtWCCQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity/1.1.1",
       "files": [
@@ -4441,7 +4455,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/1.1.1": {
-      "sha512": "MFyRVpxaf1/gw1Gx4NBwm8vPxcC19JjrgnjoS+0D+EEvXVgEglaV1OF1NOxgQnDowibPAzfk3KLlozbCSjLEpQ==",
+      "sha512": "ah1BFKtuzYMGg0NeAJ7f3Iay3yCTNrEJKMspmECS4hl6uuV+Nit53VWKhdkr63yDsCZOHCtozGSas5hF2GJUzw==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/1.1.1",
       "files": [
@@ -5954,6 +5968,17 @@
         "Sakura.AspNetCore.PagedList.Abstractions.nuspec",
         "lib/netstandard1.0/Sakura.AspNetCore.PagedList.Abstractions.dll",
         "lib/netstandard1.0/Sakura.AspNetCore.PagedList.Abstractions.xml"
+      ]
+    },
+    "Stripe.net/9.0.0": {
+      "sha512": "uVO2RhWpBY+KG8q+efzzFPz3dVrx6q7BWLXsyRkbOvmIegdTJQh8i1ellaPFa078HDJ8/kdruHuyF+wJWFsxeQ==",
+      "type": "package",
+      "path": "stripe.net/9.0.0",
+      "files": [
+        "lib/net45/Stripe.net.dll",
+        "lib/netstandard1.2/Stripe.net.dll",
+        "stripe.net.9.0.0.nupkg.sha512",
+        "stripe.net.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -10763,19 +10788,20 @@
       "MimeKit >= 1.14.1",
       "RetroMarket.PosteCanada >= 1.0.0",
       "Sakura.AspNetCore.Mvc.PagedList >= 2.0.12",
-      "Sakura.AspNetCore.PagedList >= 2.0.1"
+      "Sakura.AspNetCore.PagedList >= 2.0.1",
+      "Stripe.net >= 9.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Utilisateur\\.nuget\\packages\\": {}
+    "C:\\Users\\Alexandr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
+      "projectUniqueName": "C:\\Users\\Alexandr\\Desktop\\GEJ\\TP3 veille\\src\\RetroMarket\\RetroMarket.csproj",
       "projectName": "RetroMarket",
-      "projectPath": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
-      "outputPath": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\src\\RetroMarket\\obj\\",
+      "projectPath": "C:\\Users\\Alexandr\\Desktop\\GEJ\\TP3 veille\\src\\RetroMarket\\RetroMarket.csproj",
+      "outputPath": "C:\\Users\\Alexandr\\Desktop\\GEJ\\TP3 veille\\src\\RetroMarket\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.0"
@@ -10783,8 +10809,8 @@
       "frameworks": {
         "netcoreapp1.0": {
           "projectReferences": {
-            "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\RetroMarket.PosteCanada\\RetroMarket.PosteCanada.csproj": {
-              "projectPath": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\RetroMarket.PosteCanada\\RetroMarket.PosteCanada.csproj"
+            "C:\\Users\\Alexandr\\Desktop\\GEJ\\TP3 veille\\RetroMarket.PosteCanada\\RetroMarket.PosteCanada.csproj": {
+              "projectPath": "C:\\Users\\Alexandr\\Desktop\\GEJ\\TP3 veille\\RetroMarket.PosteCanada\\RetroMarket.PosteCanada.csproj"
             }
           }
         }
@@ -10877,6 +10903,10 @@
           "Microsoft.AspNetCore.Session": {
             "target": "Package",
             "version": "1.1.1"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "9.0.0"
           },
           "Microsoft.Extensions.Caching.Memory": {
             "target": "Package",

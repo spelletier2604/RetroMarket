@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp1.0</TargetFramework>
     <PreserveCompilationContext>true</PreserveCompilationContext>
@@ -9,20 +8,17 @@
     <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
   </PropertyGroup>
-
   <ItemGroup>
     <Content Include="wwwroot\css\background.css" />
     <Content Include="wwwroot\lib\Images\background.jpg" />
     <Content Include="wwwroot\lib\Images\Logo.png" />
     <Content Include="wwwroot\lib\Images\Logo_-_Pink.PNG" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="wwwroot\**\*">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="MailKit" Version="1.14.2" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
@@ -46,26 +42,22 @@
     <PackageReference Include="MimeKit" Version="1.14.1" />
     <PackageReference Include="Sakura.AspNetCore.Mvc.PagedList" Version="2.0.12" />
     <PackageReference Include="Sakura.AspNetCore.PagedList" Version="2.0.1" />
+    <PackageReference Include="Stripe.net" Version="9.0.0" />
   </ItemGroup>
-
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="Resources\Views\Home\About.en.resx" />
     <None Include="Resources\Views\Shared\Components\CartSummary\Default.fr.resx" />
     <None Include="wwwroot\lib\Images\Logo_-_Pink.PNG" />
   </ItemGroup>
-
   <ItemGroup>
-        <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\RetroMarket.PosteCanada\RetroMarket.PosteCanada.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="Resources\Views\Account\Login.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,5 +153,4 @@
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
   </ItemGroup>
-  
 </Project>

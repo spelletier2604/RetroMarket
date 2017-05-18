@@ -1,5 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
 @inject IViewLocalizer Localizer
+@inject IOptions<StripeSettings> Stripe
 
 @model ShipViewModel
 
@@ -53,6 +55,7 @@
             <input class="btn btn-primary" type="submit" value="@Localizer["Complete"]" />
         </div>
     </form>
+   
 }
 else
 {
@@ -61,5 +64,20 @@ else
 <h2>@Localizer["Thanks"]</h2>
 <h3>Total Price (without taxes): @ViewData["Price"]</h3>
 <h3>Total Price (with taxes): @ViewData["Taxes"]</h3>
+
+<form action="/Order/Charge" method="POST">
+    <article>
+        <label>Total: @ViewData["Taxes"]</label>
+    </article>
+    <script src="https://checkout.stripe.com/v2/checkout.js"
+            class="stripe-button"
+            data-key="@Stripe.Value.PublishableKey"
+            data-locale="auto"
+            data-description="Sample Charge"
+            data-amount=@ViewData["Taxes"]
+            data-currency="cad">
+    </script>
+</form>
+
 <p>@Localizer["Thanks2"]</p>
 <p>@Localizer["Ship"]</p>
