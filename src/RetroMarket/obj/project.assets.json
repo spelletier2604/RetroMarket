@@ -2036,6 +2036,20 @@
           "lib/netstandard1.0/Sakura.AspNetCore.PagedList.Abstractions.dll": {}
         }
       },
+      "Stripe.net/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Security.Cryptography.Algorithms": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.2/Stripe.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.2/Stripe.net.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5954,6 +5968,17 @@
         "Sakura.AspNetCore.PagedList.Abstractions.nuspec",
         "lib/netstandard1.0/Sakura.AspNetCore.PagedList.Abstractions.dll",
         "lib/netstandard1.0/Sakura.AspNetCore.PagedList.Abstractions.xml"
+      ]
+    },
+    "Stripe.net/9.0.0": {
+      "sha512": "uVO2RhWpBY+KG8q+efzzFPz3dVrx6q7BWLXsyRkbOvmIegdTJQh8i1ellaPFa078HDJ8/kdruHuyF+wJWFsxeQ==",
+      "type": "package",
+      "path": "stripe.net/9.0.0",
+      "files": [
+        "lib/net45/Stripe.net.dll",
+        "lib/netstandard1.2/Stripe.net.dll",
+        "stripe.net.9.0.0.nupkg.sha512",
+        "stripe.net.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -10763,7 +10788,8 @@
       "MimeKit >= 1.14.1",
       "RetroMarket.PosteCanada >= 1.0.0",
       "Sakura.AspNetCore.Mvc.PagedList >= 2.0.12",
-      "Sakura.AspNetCore.PagedList >= 2.0.1"
+      "Sakura.AspNetCore.PagedList >= 2.0.1",
+      "Stripe.net >= 9.0.0"
     ]
   },
   "packageFolders": {
@@ -10877,6 +10903,10 @@
           "Microsoft.AspNetCore.Session": {
             "target": "Package",
             "version": "1.1.1"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "9.0.0"
           },
           "Microsoft.Extensions.Caching.Memory": {
             "target": "Package",

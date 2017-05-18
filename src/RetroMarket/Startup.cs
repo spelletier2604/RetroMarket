@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Sakura.AspNetCore.Mvc;
 using RetroMarket.Services;
+using Stripe;
 
 namespace RetroMarket
 {
@@ -79,6 +80,7 @@ namespace RetroMarket
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
           
         }
 
@@ -146,7 +148,7 @@ namespace RetroMarket
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
             SeedData.EnsurePopulated(app);
-            
+            StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
         }
 
     }
