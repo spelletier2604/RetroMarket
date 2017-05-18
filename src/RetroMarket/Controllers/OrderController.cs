@@ -197,7 +197,6 @@ namespace RetroMarket.Controllers
             return result;
         }
 
-<<<<<<< HEAD
         public float CalculTransportPosteCanada(Cart cart)
         {
             //float result = 0.0f;
@@ -221,7 +220,7 @@ namespace RetroMarket.Controllers
             //result = _context.Purolator.FirstOrDefault(x => x.MargedePoid == (int)poids).Modificateur;
             //
             return 0;
-=======
+        }
         public IActionResult Charge(string stripeEmail, string stripeToken, int amount)
         {
             var customers = new StripeCustomerService();
@@ -242,7 +241,6 @@ namespace RetroMarket.Controllers
             });
 
             return View();
->>>>>>> origin/master
         }
     }
 }
