@@ -90,6 +90,7 @@ namespace RetroMarket.Models {
                         Modificateur = 1 + (f/100)
                     });
                 }
+                context.SaveChanges();
             }
 
 

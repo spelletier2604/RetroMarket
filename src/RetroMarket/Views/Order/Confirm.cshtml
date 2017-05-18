@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@model ShipViewModel
+
+
+@if (User.Identity.IsAuthenticated || Model.Valid)
+{
+    <h2>@Localizer["Check"]</h2>
+    <p>@Localizer["Please"]</p>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <form asp-action="Confirm" method="post">
+        <h3>@Localizer["Ship"]</h3>
+        <div class="form-group">
+            <label>@Localizer["Name"]</label><input asp-for="Name" class="form-control" />
+        </div>
+        <h3>@Localizer["Address"]</h3>
+        <div class="form-group">
+            <label>@Localizer["Line1"]</label><input asp-for="Line1" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>@Localizer["Line2"]</label><input asp-for="Line2" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>@Localizer["Line3"]</label><input asp-for="Line3" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>@Localizer["City"]</label><input asp-for="City" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>@Localizer["State"]</label>
+            <select asp-for="State" style="width:150px" id="selection">
+                @foreach (TaxesCanada.Abbre item in Enum.GetValues(typeof(TaxesCanada.Abbre)))
+                {
+                    <option value="@item">@item</option>
+                }
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label>@Localizer["Zip"]</label><input asp-for="Zip" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>@Localizer["Country"]</label><input asp-for="Country" class="form-control" />
+        </div>
+        <h3>@Localizer["Options"]</h3>
+        <div class="checkbox">
+            <label>
+                <input asp-for="GiftWrap" /> @Localizer["Gift"]
+            </label>
+        </div>
+        <div class="text-center">
+            <input class="btn btn-primary" type="submit" value="@Localizer["Complete"]" />
+        </div>
+    </form>
+}
+else
+{
+    <p>@Localizer["Connected"]</p>
+}
+<h2>@Localizer["Thanks"]</h2>
+<h3>Total Price (without taxes): @ViewData["Price"]</h3>
+<h3>Total Price (with taxes): @ViewData["Taxes"]</h3>
+<p>@Localizer["Thanks2"]</p>
+<p>@Localizer["Ship"]</p>

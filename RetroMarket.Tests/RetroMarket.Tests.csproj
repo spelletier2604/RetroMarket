@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RetroMarket.PosteCanada\RetroMarket.PosteCanada.csproj" />
     <ProjectReference Include="..\src\RetroMarket\RetroMarket.csproj" />
   </ItemGroup>
 
