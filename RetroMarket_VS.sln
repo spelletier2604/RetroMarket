@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetroMarket.Tests", "RetroM
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "poste_canada", "poste_canada", "{A533AE71-E2C6-4607-BA32-386303333781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetroMarket.PosteCanada", "RetroMarket.PosteCanada\RetroMarket.PosteCanada.csproj", "{5585642D-DCD4-4ACB-8D27-C4E419AC2523}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,10 +29,6 @@ Global
 		{88316D1D-8E49-4479-8958-0D073DFF8547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88316D1D-8E49-4479-8958-0D073DFF8547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88316D1D-8E49-4479-8958-0D073DFF8547}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5585642D-DCD4-4ACB-8D27-C4E419AC2523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5585642D-DCD4-4ACB-8D27-C4E419AC2523}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5585642D-DCD4-4ACB-8D27-C4E419AC2523}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5585642D-DCD4-4ACB-8D27-C4E419AC2523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +36,5 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A825CD89-994A-415D-A345-F135E55A3492} = {0E79DEE8-1F49-46D8-84FC-7A1150851277}
 		{88316D1D-8E49-4479-8958-0D073DFF8547} = {DD57CA01-635E-411C-B061-ACED910AB0F9}
-		{5585642D-DCD4-4ACB-8D27-C4E419AC2523} = {A533AE71-E2C6-4607-BA32-386303333781}
 	EndGlobalSection
 EndGlobal

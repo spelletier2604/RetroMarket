@@ -56,9 +56,6 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\RetroMarket.PosteCanada\RetroMarket.PosteCanada.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Update="Resources\Views\Account\Login.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>

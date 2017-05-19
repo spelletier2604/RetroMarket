@@ -80,12 +80,7 @@ namespace RetroMarket.Controllers
             {
                 Order = order,
                 OrderId = order.OrderID,
-                Valid = false,
-                ShipOptions = new List<ShipOptions>
-                {
-                    new ShipOptions {Id = 1, ShipName = "Purolator" },
-                    new ShipOptions {Id = 2, ShipName = "Poste Canada" }
-                }
+                Valid = false
             };
 
             // Pour s'assurer que la commande a passer par Checkout
@@ -112,15 +107,27 @@ namespace RetroMarket.Controllers
                 ship.PriceTaxes = montant;
                 ViewData["Taxes"] = montant;
 
+                bool shipperIsPurolator = true;
+                float purolator = 0.0f;
+                float postecanada = 0.0f;
+                purolator = CalculTransportPurolator(cart);
+                postecanada = CalculTransportPosteCanada(cart, ship);
 
-                ship.PriceShipPurolator = CalculTransportPurolator(cart);
-                ViewData["Purolator"] = CalculTransportPurolator(cart);
-                ship.PriceShipPosteCanada = CalculTransportPosteCanada(cart);
-                ViewData["PosteCanada"] = CalculTransportPosteCanada(cart);
+                if (postecanada == 0.0f)
+                    shipperIsPurolator = true;
+                else if (purolator > postecanada)
+                    shipperIsPurolator = false;
 
-                ViewData["TotalPurolator"] = ship.PriceTaxes + ship.PriceShipPurolator;
-                ViewData["TotalPosteCanada"] = ship.PriceTaxes + ship.PriceShipPosteCanada;
+                if (shipperIsPurolator)
+                    ship.PriceShip = purolator;
 
+                else
+                    ship.PriceShip = postecanada;
+
+                ship.PriceTotal = ship.PriceTaxes + ship.PriceShip;
+                ship.PriceCents = Convert.ToInt32(100 * ship.PriceTotal);
+                ViewData["Shipping"] = ship.PriceShip;
+                ViewData["Total"] = ship.PriceTotal;
                 ship.Valid = true;
                 return View(ship);
             }
@@ -134,39 +141,26 @@ namespace RetroMarket.Controllers
         public IActionResult Confirm(ShipViewModel ship)
         {
             ship.Order = _context.Orders.FirstOrDefault(o => o.OrderID == ship.OrderId);
-            if (ship.SelectedShip == 1)
-            {
-                ship.PriceTotal = ship.PriceTaxes + ship.PriceShipPurolator;
+            // if (ship.SelectedShip == 1)
+            //{
+            //    ship.PriceTotal = ship.PriceTaxes + ship.PriceShipPurolator;
 
-                return RedirectToAction(nameof(Completed), ship);
-            }
-            else if (ship.SelectedShip == 2)
-            {
-                ship.PriceTotal = ship.PriceTaxes + ship.PriceShipPosteCanada;
-
-                return RedirectToAction(nameof(Completed), ship);
-            }
-            else
-            {
-                return View();
-            }
+            //    return RedirectToAction(nameof(Completed), ship);
+            //  }
+            //  else if (ship.SelectedShip == 2)
+            //  {
+            //     ship.PriceTotal = ship.PriceTaxes + ship.PriceShipPosteCanada;
+            //
+            //       return RedirectToAction(nameof(Completed), ship);
+            // //  }
+            //   else
+            //   {
+            return View();
+            // }
         }
 
         public ViewResult Completed(ShipViewModel ship)
         {
-            ViewData["Price"] = ship.PriceRaw;
-            ViewData["Taxes"] = ship.PriceTaxes;
-
-            if (ship.SelectedShip == 1)
-            {
-                ViewData["Transport"] = ship.PriceShipPurolator;
-            }
-            else if (ship.SelectedShip == 2)
-            {
-                ViewData["Transport"] = ship.PriceShipPosteCanada;
-            }
-
-            ViewData["Total"] = ship.PriceTotal;
 
             cart.Clear();
             return View();
@@ -176,6 +170,8 @@ namespace RetroMarket.Controllers
         {
             float result = 0.0f;
             float poids = 0.0f;
+            float poidsArrondie = 0.0f;
+            float prixPoids = 0.0f;
 
             foreach (CartLine item in cart.Lines)
             {
@@ -190,37 +186,34 @@ namespace RetroMarket.Controllers
              Round(5.1) = 5;
              5 * 10 = 50;
              */
-            poids = (float)Math.Round(poids / 10 - 0.5) * 10;
+            poidsArrondie = (float)Math.Round(poids / 10 - 0.5) * 10;
 
-            result = _context.Purolator.FirstOrDefault(x => x.MargedePoid == (int)poids).Modificateur;
+            prixPoids = _context.Purolator.FirstOrDefault(x => x.MargedePoid == (int)poidsArrondie).Modificateur;
+
+            result = poids * prixPoids;
+            return result;
+        }
+
+        public float CalculTransportPosteCanada(Cart cart, ShipViewModel ship)
+        {
+            float result = 0.0f;
+            //float poids = 0.0f;
+            List<float> panierPoids = new List<float>();
+
+            int i = 1;
+            foreach (CartLine item in cart.Lines)
+            {
+                panierPoids.Add(item.Product.Poids);
+            }
+
+            //PosteCanada.Program posteCanada = new PosteCanada.Program();
+            //posteCanada.Principale(panierPoids, ship.Order.Zip);
+            //TestClient client = new TestClient();
+            //result = client.CallGetQuickEstimate(ship.Order.City, ship.Order.Country, ship.Order.State, ship.Order.Zip, Convert.ToInt32(poids));
 
             return result;
         }
 
-        public float CalculTransportPosteCanada(Cart cart)
-        {
-            //float result = 0.0f;
-            //float poids = 0.0f;
-            //
-            //foreach (CartLine item in cart.Lines)
-            //{
-            //    poids += item.Product.Poids;
-            //}
-            //
-            ///*Devrait s'assurer qu'on a un chiffre arrondie à la valeur
-            // dizaine inférieur (Exemple 11 = 10)
-            // Exemple de ce que le code fait:
-            // 56 / 10 = 5.6;
-            // 5.6 - 0.5 = 5.1;
-            // Round(5.1) = 5;
-            // 5 * 10 = 50;
-            // */
-            //poids = (float)Math.Round(poids / 10 - 0.5) * 10;
-            //
-            //result = _context.Purolator.FirstOrDefault(x => x.MargedePoid == (int)poids).Modificateur;
-            //
-            return 0;
-        }
         public IActionResult Charge(string stripeEmail, string stripeToken, int amount)
         {
             var customers = new StripeCustomerService();

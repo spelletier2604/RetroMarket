@@ -4124,9 +4124,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "RetroMarket.PosteCanada/1.0.0": {
-        "type": "project"
       }
     }
   },
@@ -10756,11 +10753,6 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
-    },
-    "RetroMarket.PosteCanada/1.0.0": {
-      "type": "project",
-      "path": "../../RetroMarket.PosteCanada/RetroMarket.PosteCanada.csproj",
-      "msbuildProject": "../../RetroMarket.PosteCanada/RetroMarket.PosteCanada.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10786,7 +10778,6 @@
       "Microsoft.NETCore.App >= 1.0.4",
       "Microsoft.VisualStudio.Web.BrowserLink >= 1.1.0",
       "MimeKit >= 1.14.1",
-      "RetroMarket.PosteCanada >= 1.0.0",
       "Sakura.AspNetCore.Mvc.PagedList >= 2.0.12",
       "Sakura.AspNetCore.PagedList >= 2.0.1",
       "Stripe.net >= 9.0.0"
@@ -10808,11 +10799,7 @@
       ],
       "frameworks": {
         "netcoreapp1.0": {
-          "projectReferences": {
-            "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\RetroMarket.PosteCanada\\RetroMarket.PosteCanada.csproj": {
-              "projectPath": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\RetroMarket.PosteCanada\\RetroMarket.PosteCanada.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       }
     },

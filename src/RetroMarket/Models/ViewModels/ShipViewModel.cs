@@ -9,19 +9,17 @@ namespace RetroMarket.Models.ViewModels
     {
         public Order Order { get; set; }
         public int OrderId { get; set; }
-        public IEnumerable<ShipOptions> ShipOptions { get; set; }
-        public int SelectedShip { get; set; }
         public bool Valid { get; set; }
         // Prix SANS taxes SANS livraisons
         public float PriceRaw { get; set; }
         // Prix AVEC taxe SANS livraisons
         public float PriceTaxes { get; set; }
         // Prix de la livraisons
-        public float PriceShipPurolator { get; set; }
-        // Prix de la livraisons
-        public float PriceShipPosteCanada { get; set; }
+        public float PriceShip { get; set; }
         // Prix AVEC taxes AVEC livraisons
         public float PriceTotal { get; set; }
+        public int PriceCents { get; set; }
+        public string Shipper { get; set; }
 
     }
     public class ShipOptions
