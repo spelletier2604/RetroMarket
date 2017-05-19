@@ -112,7 +112,7 @@ namespace RetroMarket.Controllers
                 float purolator = 0.0f;
                 float postecanada = 0.0f;
                 purolator = CalculTransportPurolator(cart);
-                postecanada = CalculTransportPosteCanada(cart, ship);
+                postecanada = CalculTransportPosteCanada(cart, ship.Order.Zip);
 
                 if (postecanada == 0.0f)
                     shipperIsPurolator = true;
@@ -203,7 +203,7 @@ namespace RetroMarket.Controllers
             return (float)Math.Round(result, 2);
         }
 
-        public float CalculTransportPosteCanada(Cart cart, ShipViewModel ship)
+        public float CalculTransportPosteCanada(Cart cart, string codePostal)
         {
             float result = 0.0f;
             //float poids = 0.0f;
@@ -219,7 +219,7 @@ namespace RetroMarket.Controllers
             }
 
             PosteCanada.Program posteCanada = new PosteCanada.Program();
-            result = posteCanada.Principale(monPanier, ship.Order.Zip);
+            result = posteCanada.Principale(monPanier, codePostal);
             //TestClient client = new TestClient();
             //result = client.CallGetQuickEstimate(ship.Order.City, ship.Order.Country, ship.Order.State, ship.Order.Zip, Convert.ToInt32(poids));
 
