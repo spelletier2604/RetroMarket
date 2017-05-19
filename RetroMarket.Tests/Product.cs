@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace RetroMarket.Models {
+namespace RetroMarket.Tests
+{
 
     public class Product {
         public int ProductID { get; set; }

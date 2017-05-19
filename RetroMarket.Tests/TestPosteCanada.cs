@@ -15,7 +15,7 @@ namespace RetroMarket.Tests
             // Arrange
             OrderController controller = new OrderController(new EFOrderRepository(new ApplicationDbContext()), new Cart(), new ApplicationDbContext());
             //controller.CalculTransportPosteCanada()
-            Product p = new Product() { Name = "Test", Price = 100, Poids = 10 };
+            Models.Product p = new Models.Product() { Name = "Test", Price = 100, Poids = 10 };
             Cart cart = new Cart();
             cart.AddItem(p, 1);
             string[] locations = new string[5];

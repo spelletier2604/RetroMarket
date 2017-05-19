@@ -4222,7 +4222,7 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication/1.1.1": {
-      "sha512": "YTDjSF+YdUvNTha9dipv3WhXcCCvoJmFFctR8pLKTX/TOCGe4YmiBPNxcOV+KGRf/EJhZmC+PU9j6evA11z7XA==",
+      "sha512": "CPeL0ygrHSnraLNGCAiYCew1GcXhewHDMZxDuCIK6ivVO4j/vqp5/J2swqQCENeiw93AkBXYcLY1wS1+HVQZbg==",
       "type": "package",
       "path": "microsoft.aspnetcore.authentication/1.1.1",
       "files": [
@@ -4235,7 +4235,7 @@
       ]
     },
     "Microsoft.AspNetCore.Authentication.Cookies/1.1.1": {
-      "sha512": "3lDlw+ojtnuEY+b+zDfBhhKNMBdHyWnVjTTsMgxDH8V1VEIrgrg593FoSCF5IFkTanVV3FByZJZaUDwzXo9x6w==",
+      "sha512": "3LCmKpyaQocfdIBb7B/x/yxEHj74jkbTOfRHH8pMeLAwn3wyZsyrrWXGFhZ2E7Lb9uXRVgi4trSVZ+2AF+JlUQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.authentication.cookies/1.1.1",
       "files": [
@@ -4287,7 +4287,7 @@
       ]
     },
     "Microsoft.AspNetCore.Cryptography.KeyDerivation/1.1.1": {
-      "sha512": "wOwnofeMlkjjbi2jF/JSMMTolAbFKYlmZNp3Wq5sOINSTNILu7riSaRhuDcKZKSlhUa2MkhxTyz1x5ADjMHKDQ==",
+      "sha512": "FGn4Ek+o0UYeD8G5aU4soG7LPGK63dqWwS3R7HMkviq0jWM4ftOZ6LbmoHO6TJH80Jiti2cNV8iyySgInlcCYQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/1.1.1",
       "files": [
@@ -4467,7 +4467,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity/1.1.1": {
-      "sha512": "V2FeEpyCiz7H1G0rcbFJznfjouxg8mxIhqn4u/wyXlAYteYm+bVzJkA8zaiKzGqjfJc2buQ2j0EZdokl1oS2tQ==",
+      "sha512": "RZ8HJMeReuxdvLt1gIdBRWswpjPKjq7i4pvjtpxfQQJHx1t8OEFLa0bbHxcA9aCQ8waH2WoGJ01UgDARP/njwg==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity/1.1.1",
       "files": [
@@ -4480,7 +4480,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/1.1.1": {
-      "sha512": "3jjScZ/GXo2uer9vscU+bRo0USIQPtedq05QMSp3xKcXFeJQ/WM+ejHkymjUxZne4gJfchR38HBbJYNk0Su4Ww==",
+      "sha512": "MFyRVpxaf1/gw1Gx4NBwm8vPxcC19JjrgnjoS+0D+EEvXVgEglaV1OF1NOxgQnDowibPAzfk3KLlozbCSjLEpQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/1.1.1",
       "files": [
@@ -10882,15 +10882,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Samuel Pelletier\\.nuget\\packages\\": {}
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Samuel Pelletier\\Desktop\\GitCommerce\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
+      "projectUniqueName": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
       "projectName": "RetroMarket",
-      "projectPath": "C:\\Users\\Samuel Pelletier\\Desktop\\GitCommerce\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
-      "outputPath": "C:\\Users\\Samuel Pelletier\\Desktop\\GitCommerce\\RetroMarket\\src\\RetroMarket\\obj\\",
+      "projectPath": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\src\\RetroMarket\\RetroMarket.csproj",
+      "outputPath": "C:\\Users\\Utilisateur\\Documents\\GitHub\\RetroMarket\\src\\RetroMarket\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.0"
