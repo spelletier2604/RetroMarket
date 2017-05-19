@@ -186,12 +186,21 @@ namespace RetroMarket.Controllers
              Round(5.1) = 5;
              5 * 10 = 50;
              */
-            poidsArrondie = (float)Math.Round(poids / 10 - 0.5) * 10;
+            float temp = poids / 10 - 0.4f;
+            poidsArrondie = (float)Math.Round(temp) * 10;
 
-            prixPoids = _context.Purolator.FirstOrDefault(x => x.MargedePoid == (int)poidsArrondie).Modificateur;
+
+            if (poidsArrondie > 151)
+            {
+                prixPoids = 1.16f;
+            }
+            else
+            {
+                prixPoids = _context.Purolator.FirstOrDefault(x => x.MargedePoid == (int)poidsArrondie).Modificateur;
+            }
 
             result = poids * prixPoids;
-            return result;
+            return (float)Math.Round(result, 2);
         }
 
         public float CalculTransportPosteCanada(Cart cart, ShipViewModel ship)
