@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RetroMarket.Models;
 using RetroMarket.Models.ViewModels;
+using RetroMarket.PosteCanada;
 using Stripe;
 using System;
 using System.Collections.Generic;
@@ -159,9 +160,8 @@ namespace RetroMarket.Controllers
             // }
         }
 
-        public ViewResult Completed(ShipViewModel ship)
+        public ViewResult Completed()
         {
-
             cart.Clear();
             return View();
         }
@@ -198,16 +198,19 @@ namespace RetroMarket.Controllers
         {
             float result = 0.0f;
             //float poids = 0.0f;
-            List<float> panierPoids = new List<float>();
+            List<ArticlePanier> monPanier = new List<ArticlePanier>();
 
             int i = 1;
             foreach (CartLine item in cart.Lines)
             {
-                panierPoids.Add(item.Product.Poids);
+                ArticlePanier a = new ArticlePanier();
+                a.ID = i++;
+                a.Poids = Convert.ToDecimal(item.Product.Poids);
+                monPanier.Add(a);
             }
 
-            //PosteCanada.Program posteCanada = new PosteCanada.Program();
-            //posteCanada.Principale(panierPoids, ship.Order.Zip);
+            PosteCanada.Program posteCanada = new PosteCanada.Program();
+            result = posteCanada.Principale(monPanier, ship.Order.Zip);
             //TestClient client = new TestClient();
             //result = client.CallGetQuickEstimate(ship.Order.City, ship.Order.Country, ship.Order.State, ship.Order.Zip, Convert.ToInt32(poids));
 
@@ -233,7 +236,7 @@ namespace RetroMarket.Controllers
                 CustomerId = customer.Id
             });
 
-            return View();
+            return RedirectToAction(nameof(Completed));
         }
     }
 }

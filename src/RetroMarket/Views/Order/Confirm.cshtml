@@ -17,7 +17,7 @@
 
     <form action="/Order/Charge" method="POST">
         <article>
-            <label>Total: @ViewData["Taxes"]</label>
+            <label>Total: @Model.PriceCents</label>
         </article>
         <script src="https://checkout.stripe.com/v2/checkout.js"
                 class="stripe-button"
@@ -27,6 +27,7 @@
                 data-amount=@Model.PriceCents
                 data-currency="cad">
         </script>
+        <input type="hidden" name="amount" value="@Model.PriceCents" />
     </form>
 }
 else
